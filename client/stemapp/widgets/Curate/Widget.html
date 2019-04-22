@@ -1,0 +1,38 @@
+<div>
+
+  <div class="dummy-loader" data-dojo-attach-point="dummyLoader">Loading...</div>
+
+  <div> You have selected
+  	<div id="selectionCt" data-dojo-attach-point="selectionCt">0</div>
+  	 uncurated address records to curate. Click on the blow buttons to start the curation process.
+  </div>
+
+  <div id="curateTooltip" data-dojo-attach-point="curateTooltip">(See the detail of curation option)</div>
+
+  <button id="curateBtn" data-dojo-attach-point="curateBtn" class="btn btn-primary disabled">Curate</button>
+  <button id="curateNoCopyBtn" data-dojo-attach-point="curateNoCopyBtn" class="btn btn-primary disabled">Curate without Copying</button>
+
+  <div class="transaction" data-dojo-attach-point="transactionCont">
+    <div data-dojo-attach-point="transactionPreview"></div>
+    <div class="transaction-progress hidden" data-dojo-attach-point="transactionLoader">
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:100%"></div>
+      </div>
+    </div>
+  	<div class="alert alert-success transaction-msg hidden" data-dojo-attach-point="transactionSuccess">
+      <div class="transaction-data" data-dojo-attach-point="transactionSuccessCt">0</div> address records have been curated successfully.
+      <div class="transaction-msg" data-dojo-attach-point="transactionSuccessMsg"></div>
+    </div>
+    <div class="alert alert-warning transaction-msg hidden" data-dojo-attach-point="transactionWarning">
+      <div class="transaction-data" data-dojo-attach-point="transactionWarningCt">0</div> address records have already existed in the Address Table.
+      <div class="transaction-msg" data-dojo-attach-point="transactionWarningMsg"></div>
+    </div>
+    <div class="alert alert-warning transaction-msg hidden" data-dojo-attach-point="transactionFailure">
+      <div class="transaction-data" data-dojo-attach-point="transactionFailureCt">0</div> address records failed to be curated.
+      <div class="transaction-msg" data-dojo-attach-point="transactionFailureMsg"></div>
+    </div>
+  	<div class="alert alert-danger transaction-msg hidden" data-dojo-attach-point="transactionError">Your selected address records failed to be curated.
+      <div class="transaction-data" data-dojo-attach-point="transactionErrorMsg">(ERR_MESSAGE)</div>
+    </div>
+  </div>
+</div>

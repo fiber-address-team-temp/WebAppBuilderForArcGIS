@@ -1,0 +1,1485 @@
+[2019-04-04T18:56:43.788] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T18:56:44.658] [INFO] app - Find 6 predfinded apps.
+[2019-04-04T18:56:44.660] [INFO] repo - insert HTML.About
+[2019-04-04T18:56:44.660] [INFO] repo - insert HTML.AddData
+[2019-04-04T18:56:44.661] [INFO] repo - insert HTML.Analysis
+[2019-04-04T18:56:44.662] [INFO] repo - insert HTML.AttributeTable
+[2019-04-04T18:56:44.662] [INFO] repo - insert HTML.BasemapGallery
+[2019-04-04T18:56:44.663] [INFO] repo - insert HTML.BatchAttributeEditor
+[2019-04-04T18:56:44.663] [INFO] repo - insert HTML.Bookmark
+[2019-04-04T18:56:44.664] [INFO] repo - insert HTML.Chart
+[2019-04-04T18:56:44.664] [INFO] repo - insert HTML.Coordinate
+[2019-04-04T18:56:44.665] [INFO] repo - insert HTML.CoordinateConversion
+[2019-04-04T18:56:44.666] [INFO] repo - insert HTML.CostAnalysis
+[2019-04-04T18:56:44.666] [INFO] repo - insert HTML.DataAggregation
+[2019-04-04T18:56:44.667] [INFO] repo - insert HTML.Directions
+[2019-04-04T18:56:44.667] [INFO] repo - insert HTML.DistanceAndDirection
+[2019-04-04T18:56:44.668] [INFO] repo - insert HTML.DistrictLookup
+[2019-04-04T18:56:44.668] [INFO] repo - insert HTML.Draw
+[2019-04-04T18:56:44.669] [INFO] repo - insert HTML.Edit
+[2019-04-04T18:56:44.670] [INFO] repo - insert HTML.EmergencyResponseGuide
+[2019-04-04T18:56:44.671] [INFO] repo - insert HTML.ExtentNavigate
+[2019-04-04T18:56:44.671] [INFO] repo - insert HTML.Filter
+[2019-04-04T18:56:44.672] [INFO] repo - insert HTML.FullScreen
+[2019-04-04T18:56:44.672] [INFO] repo - insert HTML.GeoLookup
+[2019-04-04T18:56:44.673] [INFO] repo - insert HTML.Geoprocessing
+[2019-04-04T18:56:44.673] [INFO] repo - insert HTML.GridOverlay
+[2019-04-04T18:56:44.674] [INFO] repo - insert HTML.GriddedReferenceGraphic
+[2019-04-04T18:56:44.675] [INFO] repo - insert HTML.GroupFilter
+[2019-04-04T18:56:44.675] [INFO] repo - insert HTML.HomeButton
+[2019-04-04T18:56:44.676] [INFO] repo - insert HTML.ImageMeasurement
+[2019-04-04T18:56:44.676] [INFO] repo - insert HTML.IncidentAnalysis
+[2019-04-04T18:56:44.677] [INFO] repo - insert HTML.InfoSummary
+[2019-04-04T18:56:44.677] [INFO] repo - insert HTML.Infographic
+[2019-04-04T18:56:44.678] [INFO] repo - insert HTML.LayerList
+[2019-04-04T18:56:44.678] [INFO] repo - insert HTML.Legend
+[2019-04-04T18:56:44.678] [INFO] repo - insert HTML.Measurement
+[2019-04-04T18:56:44.679] [INFO] repo - insert HTML.MyLocation
+[2019-04-04T18:56:44.679] [INFO] repo - insert HTML.NearMe
+[2019-04-04T18:56:44.680] [INFO] repo - insert HTML.ObliqueViewer
+[2019-04-04T18:56:44.680] [INFO] repo - insert HTML.OverviewMap
+[2019-04-04T18:56:44.681] [INFO] repo - insert HTML.ParcelDrafter
+[2019-04-04T18:56:44.681] [INFO] repo - insert HTML.Print
+[2019-04-04T18:56:44.682] [INFO] repo - insert HTML.PublicNotification
+[2019-04-04T18:56:44.682] [INFO] repo - insert HTML.Query
+[2019-04-04T18:56:44.683] [INFO] repo - insert HTML.RelatedTableCharts
+[2019-04-04T18:56:44.683] [INFO] repo - insert HTML.ReportFeature
+[2019-04-04T18:56:44.684] [INFO] repo - insert HTML.ReviewerDashboard
+[2019-04-04T18:56:44.684] [INFO] repo - insert HTML.Scalebar
+[2019-04-04T18:56:44.685] [INFO] repo - insert HTML.Screening
+[2019-04-04T18:56:44.685] [INFO] repo - insert HTML.Search
+[2019-04-04T18:56:44.686] [INFO] repo - insert HTML.Select
+[2019-04-04T18:56:44.686] [INFO] repo - insert HTML.Send
+[2019-04-04T18:56:44.687] [INFO] repo - insert HTML.Share
+[2019-04-04T18:56:44.688] [INFO] repo - insert HTML.SituationAwareness
+[2019-04-04T18:56:44.688] [INFO] repo - insert HTML.SmartEditor
+[2019-04-04T18:56:44.689] [INFO] repo - insert HTML.Splash
+[2019-04-04T18:56:44.689] [INFO] repo - insert HTML.Stream
+[2019-04-04T18:56:44.690] [INFO] repo - insert HTML.SuitabilityModeler
+[2019-04-04T18:56:44.690] [INFO] repo - insert HTML.Summary
+[2019-04-04T18:56:44.690] [INFO] repo - insert HTML.Swipe
+[2019-04-04T18:56:44.691] [INFO] repo - insert HTML.ThreatAnalysis
+[2019-04-04T18:56:44.691] [INFO] repo - insert HTML.TimeSlider
+[2019-04-04T18:56:44.692] [INFO] repo - insert HTML.Visibility
+[2019-04-04T18:56:44.692] [INFO] repo - insert HTML.ZoomSlider
+[2019-04-04T18:56:44.695] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T18:56:44.976] [INFO] repo - insert HTML.BoxTheme
+[2019-04-04T18:56:44.978] [INFO] repo - insert HTML.BillboardTheme
+[2019-04-04T18:56:44.979] [INFO] repo - insert HTML.DartTheme
+[2019-04-04T18:56:44.980] [INFO] repo - insert HTML.DashboardTheme
+[2019-04-04T18:56:44.981] [INFO] repo - insert HTML.FoldableTheme
+[2019-04-04T18:56:44.981] [INFO] repo - insert HTML.LaunchpadTheme
+[2019-04-04T18:56:44.982] [INFO] repo - insert HTML.JewelryBoxTheme
+[2019-04-04T18:56:44.983] [INFO] repo - insert HTML.PlateauTheme
+[2019-04-04T18:56:44.984] [INFO] repo - insert HTML.PocketTheme
+[2019-04-04T18:56:44.986] [INFO] repo - insert HTML.TabTheme
+[2019-04-04T18:56:44.986] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T18:56:45.376] [INFO] repo - insert HTML3D.About
+[2019-04-04T18:56:45.377] [INFO] repo - insert HTML3D.3DFx
+[2019-04-04T18:56:45.377] [INFO] repo - insert HTML3D.BasemapGallery
+[2019-04-04T18:56:45.378] [INFO] repo - insert HTML3D.Compass
+[2019-04-04T18:56:45.378] [INFO] repo - insert HTML3D.Coordinate
+[2019-04-04T18:56:45.378] [INFO] repo - insert HTML3D.Daylight
+[2019-04-04T18:56:45.379] [INFO] repo - insert HTML3D.FullScreen
+[2019-04-04T18:56:45.379] [INFO] repo - insert HTML3D.Home
+[2019-04-04T18:56:45.380] [INFO] repo - insert HTML3D.LayerList
+[2019-04-04T18:56:45.380] [INFO] repo - insert HTML3D.Legend
+[2019-04-04T18:56:45.380] [INFO] repo - insert HTML3D.MyLocation
+[2019-04-04T18:56:45.381] [INFO] repo - insert HTML3D.Search
+[2019-04-04T18:56:45.381] [INFO] repo - insert HTML3D.Measurement3D
+[2019-04-04T18:56:45.381] [INFO] repo - insert HTML3D.Navigate
+[2019-04-04T18:56:45.382] [INFO] repo - insert HTML3D.Share
+[2019-04-04T18:56:45.382] [INFO] repo - insert HTML3D.Slides
+[2019-04-04T18:56:45.383] [INFO] repo - insert HTML3D.ZoomSlider
+[2019-04-04T18:56:45.383] [INFO] repo - insert HTML3D.Splash
+[2019-04-04T18:56:45.383] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T18:56:45.594] [INFO] repo - insert HTML3D.BillboardTheme
+[2019-04-04T18:56:45.595] [INFO] repo - insert HTML3D.BoxTheme
+[2019-04-04T18:56:45.595] [INFO] repo - insert HTML3D.DartTheme
+[2019-04-04T18:56:45.596] [INFO] repo - insert HTML3D.FoldableTheme
+[2019-04-04T18:56:45.597] [INFO] repo - insert HTML3D.JewelryBoxTheme
+[2019-04-04T18:56:45.597] [INFO] repo - insert HTML3D.DashboardTheme
+[2019-04-04T18:56:45.598] [INFO] repo - insert HTML3D.LaunchpadTheme
+[2019-04-04T18:56:45.599] [INFO] repo - insert HTML3D.TabTheme
+[2019-04-04T18:57:07.724] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-04T18:59:27.605] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-04T19:05:22.759] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/jimu.js
+[2019-04-04T19:05:23.112] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/images
+[2019-04-04T19:05:23.115] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/libs
+[2019-04-04T19:05:23.134] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/index.html
+[2019-04-04T19:05:23.135] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/env.js
+[2019-04-04T19:05:23.136] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/simpleLoader.js
+[2019-04-04T19:05:23.136] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/init.js
+[2019-04-04T19:05:23.137] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/web.config
+[2019-04-04T19:05:23.137] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/dynamic-modules
+[2019-04-04T19:05:23.139] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/readme.html
+[2019-04-04T19:05:23.140] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/config-readme.txt
+[2019-04-04T19:05:23.141] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/configs
+[2019-04-04T19:05:23.145] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/.jshintrc
+[2019-04-04T19:05:23.145] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/.jshintignore
+[2019-04-04T19:05:23.146] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/3rd-party-license.txt
+[2019-04-04T19:05:23.157] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes/FoldableTheme
+[2019-04-04T19:05:23.288] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets/Scalebar
+[2019-04-04T19:05:23.358] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets/Search
+[2019-04-04T19:05:23.431] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets/Coordinate
+[2019-04-04T19:05:23.499] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets/OverviewMap
+[2019-04-04T19:05:23.553] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets/HomeButton
+[2019-04-04T19:05:23.583] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets/MyLocation
+[2019-04-04T19:05:23.646] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets/AttributeTable
+[2019-04-04T19:05:23.722] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets/Splash
+[2019-04-04T19:05:23.793] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets/ZoomSlider
+[2019-04-04T19:05:23.821] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets/ExtentNavigate
+[2019-04-04T19:05:23.855] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets/FullScreen
+[2019-04-04T19:05:23.884] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets/Legend
+[2019-04-04T19:05:23.966] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets/LayerList
+[2019-04-04T19:05:35.474] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets/Send
+[2019-04-04T19:07:22.152] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T19:07:23.758] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T19:07:24.085] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T19:07:24.560] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T19:07:38.863] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T19:07:40.472] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T19:07:40.834] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T19:07:41.323] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T19:19:24.007] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T19:19:25.629] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T19:19:25.970] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T19:19:26.513] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T19:21:47.550] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T19:21:49.274] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T19:21:49.598] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T19:21:50.066] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T19:35:13.481] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T19:35:15.150] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T19:35:15.492] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T19:35:15.992] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T19:35:42.855] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-04T19:38:16.762] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T19:38:18.373] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T19:38:18.719] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T19:38:19.181] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T19:38:40.297] [DEBUG] utils - copy /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets/Send
+[2019-04-04T19:39:54.542] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets/Send
+[2019-04-04T19:40:04.173] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T19:40:05.792] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T19:40:06.150] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T19:40:06.636] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T19:41:34.956] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T19:41:36.625] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T19:41:36.964] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T19:41:37.440] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T20:01:51.152] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T20:01:52.736] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T20:01:53.063] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T20:01:53.580] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T20:02:24.443] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T20:02:26.035] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T20:02:26.379] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T20:02:26.845] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T20:06:55.316] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T20:06:56.962] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T20:06:57.303] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T20:06:57.815] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T20:08:02.127] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T20:08:03.792] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T20:08:04.142] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T20:08:04.632] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T20:11:54.600] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T20:11:56.226] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T20:11:56.583] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T20:11:57.069] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T20:14:54.715] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T20:14:56.344] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T20:14:56.676] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T20:14:57.154] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T20:17:02.390] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T20:17:04.013] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T20:17:04.343] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T20:17:04.821] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T20:17:19.181] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T20:17:20.861] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T20:17:21.209] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T20:17:21.741] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T20:23:05.971] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T20:23:07.580] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T20:23:07.920] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T20:23:08.415] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T20:27:38.222] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T20:27:39.825] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T20:27:40.156] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T20:27:40.621] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T20:29:05.020] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T20:29:06.630] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T20:29:06.960] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T20:29:07.478] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T20:54:21.633] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T20:54:23.281] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T20:54:23.630] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T20:54:24.139] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T20:55:57.133] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T20:55:58.760] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T20:55:59.108] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T20:55:59.712] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T20:58:58.999] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T20:59:00.574] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T20:59:00.918] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T20:59:01.406] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T21:00:04.196] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T21:00:05.848] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T21:00:06.197] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T21:00:06.717] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-04T21:02:05.532] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-04T21:02:07.128] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-04T21:02:07.473] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-04T21:02:07.957] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-05T10:49:50.802] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-05T10:49:52.420] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-05T10:49:52.763] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-05T10:49:53.225] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-05T15:26:41.433] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-05T15:26:43.183] [INFO] repo - insert HTML.Curate
+[2019-04-05T15:26:43.187] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-05T15:26:43.495] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-05T15:26:43.916] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-05T15:27:24.115] [INFO] app - remove widget .DS_Store from app 2
+[2019-04-05T15:28:17.612] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets/Curate
+[2019-04-05T15:40:09.759] [INFO] default - No token is found, redirect /webappbuilder/?id=2 to /webappbuilder/?id=2&action=setportalurl
+[2019-04-05T15:41:29.684] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-05T15:41:31.303] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-05T15:41:31.599] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-05T15:41:32.002] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-05T16:08:15.572] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-05T16:08:17.269] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-05T16:08:17.569] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-05T16:08:18.030] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-05T16:10:03.874] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-05T16:10:05.549] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-05T16:10:05.851] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-05T16:10:06.259] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-05T16:20:12.606] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-05T16:20:14.237] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-05T16:20:14.529] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-05T16:20:14.966] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-05T16:25:36.353] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-05T16:25:37.957] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-05T16:25:38.247] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-05T16:25:38.667] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-05T16:34:51.585] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-05T16:34:53.234] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-05T16:34:53.546] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-05T16:34:53.999] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-05T16:36:21.220] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-05T16:36:22.866] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-05T16:36:23.153] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-05T16:36:23.572] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/WebAppBuilderForArcGIS/client/stemapp3d/themes
+[2019-04-08T14:13:46.229] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked/client/stemapp/widgets
+[2019-04-08T14:13:47.877] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked/client/stemapp/themes
+[2019-04-08T14:13:48.207] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked/client/stemapp3d/widgets
+[2019-04-08T14:13:48.645] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked/client/stemapp3d/themes
+[2019-04-08T14:15:10.665] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked/client/stemapp/widgets
+[2019-04-08T14:15:12.348] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked/client/stemapp/themes
+[2019-04-08T14:15:12.654] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked/client/stemapp3d/widgets
+[2019-04-08T14:15:13.118] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked/client/stemapp3d/themes
+[2019-04-08T14:17:03.920] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked/client/stemapp/widgets
+[2019-04-08T14:17:05.589] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked/client/stemapp/themes
+[2019-04-08T14:17:05.891] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked/client/stemapp3d/widgets
+[2019-04-08T14:17:06.307] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked/client/stemapp3d/themes
+[2019-04-08T14:20:37.212] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked/client/stemapp/widgets
+[2019-04-08T14:20:38.892] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked/client/stemapp/themes
+[2019-04-08T14:20:39.199] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked/client/stemapp3d/widgets
+[2019-04-08T14:20:39.620] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked/client/stemapp3d/themes
+[2019-04-10T11:05:14.346] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T11:05:16.025] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T11:05:16.354] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T11:05:16.783] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T11:05:40.261] [INFO] app - remove widget Send from app 2
+[2019-04-10T11:06:42.730] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T11:06:44.412] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T11:06:44.732] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T11:06:45.195] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T11:13:08.856] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T11:13:10.549] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T11:13:10.847] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T11:13:11.269] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T11:16:39.769] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T11:16:41.475] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T11:16:41.778] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T11:16:42.205] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T12:24:10.551] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T12:24:12.346] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T12:24:12.699] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T12:24:13.260] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T14:50:12.858] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T14:50:14.977] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T14:50:15.317] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T14:50:15.805] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T14:56:28.614] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T14:56:30.265] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T14:56:30.663] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T14:56:31.148] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T15:02:32.908] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T15:02:34.594] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T15:02:34.933] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T15:02:35.411] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T15:05:49.392] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T15:05:51.072] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T15:05:51.415] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T15:05:51.920] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T15:11:49.391] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T15:11:51.224] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T15:11:51.628] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T15:11:52.194] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T15:16:25.561] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T15:16:27.269] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T15:16:27.628] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T15:16:28.168] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T15:19:36.747] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T15:19:38.420] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T15:19:38.785] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T15:19:39.348] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T15:22:02.078] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T15:22:03.781] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T15:22:04.129] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T15:22:04.625] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T15:23:28.855] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T15:23:30.546] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T15:23:30.915] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T15:23:31.413] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T15:26:33.376] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T15:26:35.057] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T15:26:35.413] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T15:26:35.914] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T15:29:25.989] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T15:29:27.703] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T15:29:28.061] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T15:29:28.556] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T15:37:59.190] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T15:38:00.910] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T15:38:01.246] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T15:38:01.712] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T15:39:06.216] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T15:39:07.935] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T15:39:08.278] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T15:39:08.768] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T15:41:24.831] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T15:41:26.546] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T15:41:26.886] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T15:41:27.383] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T15:41:39.140] [DEBUG] default - on tcp proxy error
+[2019-04-10T15:42:42.465] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T15:42:44.166] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T15:42:44.504] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T15:42:44.976] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T15:44:00.107] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets
+[2019-04-10T15:44:01.793] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes
+[2019-04-10T15:44:02.134] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets
+[2019-04-10T15:44:02.619] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes
+[2019-04-10T15:48:19.200] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes/BoxTheme
+[2019-04-10T15:48:19.213] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/About
+[2019-04-10T15:48:19.226] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Coordinate
+[2019-04-10T15:48:19.238] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes/TabTheme
+[2019-04-10T15:48:19.250] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/CoordinateConversion
+[2019-04-10T15:48:19.262] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/AddData
+[2019-04-10T15:48:19.274] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes/FoldableTheme
+[2019-04-10T15:48:19.284] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes/DartTheme
+[2019-04-10T15:48:19.294] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/AttributeTable
+[2019-04-10T15:48:19.305] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/GridOverlay
+[2019-04-10T15:48:19.316] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/ExtentNavigate
+[2019-04-10T15:48:19.327] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes/BillboardTheme
+[2019-04-10T15:48:19.338] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Draw
+[2019-04-10T15:48:19.348] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes/LaunchpadTheme
+[2019-04-10T15:48:19.358] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Analysis
+[2019-04-10T15:48:19.368] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes/JewelryBoxTheme
+[2019-04-10T15:48:19.378] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Geoprocessing
+[2019-04-10T15:48:19.387] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Directions
+[2019-04-10T15:48:19.397] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes/PocketTheme
+[2019-04-10T15:48:19.407] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes/DashboardTheme
+[2019-04-10T15:48:19.415] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/BasemapGallery
+[2019-04-10T15:48:19.424] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/DataAggregation
+[2019-04-10T15:48:19.432] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/themes/PlateauTheme
+[2019-04-10T15:48:19.441] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/DistrictLookup
+[2019-04-10T15:48:19.452] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/GroupFilter
+[2019-04-10T15:48:19.461] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/GriddedReferenceGraphic
+[2019-04-10T15:48:19.470] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Curate
+[2019-04-10T15:48:19.479] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/MyLocation
+[2019-04-10T15:48:19.486] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/InfoSummary
+[2019-04-10T15:48:19.494] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/HomeButton
+[2019-04-10T15:48:19.502] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Edit
+[2019-04-10T15:48:19.510] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Bookmark
+[2019-04-10T15:48:19.518] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Print
+[2019-04-10T15:48:19.524] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/CostAnalysis
+[2019-04-10T15:48:19.538] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/FullScreen
+[2019-04-10T15:48:19.545] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/OverviewMap
+[2019-04-10T15:48:19.553] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Legend
+[2019-04-10T15:48:19.564] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/NearMe
+[2019-04-10T15:48:19.571] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/BatchAttributeEditor
+[2019-04-10T15:48:19.579] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/GeoLookup
+[2019-04-10T15:48:19.586] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Infographic
+[2019-04-10T15:48:19.592] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/DistanceAndDirection
+[2019-04-10T15:48:19.600] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/ThreatAnalysis
+[2019-04-10T15:48:19.607] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/ReportFeature
+[2019-04-10T15:48:19.613] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/ImageMeasurement
+[2019-04-10T15:48:19.620] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Chart
+[2019-04-10T15:48:19.626] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/ReviewerDashboard
+[2019-04-10T15:48:19.632] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/EmergencyResponseGuide
+[2019-04-10T15:48:19.638] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Splash
+[2019-04-10T15:48:19.643] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Scalebar
+[2019-04-10T15:48:19.648] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/ObliqueViewer
+[2019-04-10T15:48:19.654] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Query
+[2019-04-10T15:48:19.660] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Measurement
+[2019-04-10T15:48:19.664] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/ParcelDrafter
+[2019-04-10T15:48:19.670] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/RelatedTableCharts
+[2019-04-10T15:48:19.674] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Summary
+[2019-04-10T15:48:19.679] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/IncidentAnalysis
+[2019-04-10T15:48:19.685] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Filter
+[2019-04-10T15:48:19.690] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/LayerList
+[2019-04-10T15:48:19.694] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Search
+[2019-04-10T15:48:19.699] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Screening
+[2019-04-10T15:48:19.704] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/SituationAwareness
+[2019-04-10T15:48:19.708] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Share
+[2019-04-10T15:48:19.711] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/TimeSlider
+[2019-04-10T15:48:19.715] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Swipe
+[2019-04-10T15:48:19.719] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Select
+[2019-04-10T15:48:19.723] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/SmartEditor
+[2019-04-10T15:48:19.726] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/ZoomSlider
+[2019-04-10T15:48:19.730] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Stream
+[2019-04-10T15:48:19.733] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/PublicNotification
+[2019-04-10T15:48:19.736] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/Visibility
+[2019-04-10T15:48:19.739] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp/widgets/SuitabilityModeler
+[2019-04-10T15:48:19.742] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets/Share
+[2019-04-10T15:48:19.745] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets/Legend
+[2019-04-10T15:48:19.748] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets/3DFx
+[2019-04-10T15:48:19.751] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets/Slides
+[2019-04-10T15:48:19.754] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets/Coordinate
+[2019-04-10T15:48:19.757] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets/Compass
+[2019-04-10T15:48:19.759] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets/Navigate
+[2019-04-10T15:48:19.762] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets/About
+[2019-04-10T15:48:19.764] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets/Daylight
+[2019-04-10T15:48:19.767] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets/Measurement3D
+[2019-04-10T15:48:19.769] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets/Splash
+[2019-04-10T15:48:19.771] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets/ZoomSlider
+[2019-04-10T15:48:19.774] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets/Home
+[2019-04-10T15:48:19.776] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets/Search
+[2019-04-10T15:48:19.778] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets/FullScreen
+[2019-04-10T15:48:19.780] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets/LayerList
+[2019-04-10T15:48:19.782] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets/BasemapGallery
+[2019-04-10T15:48:19.783] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes/BillboardTheme
+[2019-04-10T15:48:19.785] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes/FoldableTheme
+[2019-04-10T15:48:19.786] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes/DashboardTheme
+[2019-04-10T15:48:19.788] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes/JewelryBoxTheme
+[2019-04-10T15:48:19.789] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes/TabTheme
+[2019-04-10T15:48:19.790] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes/LaunchpadTheme
+[2019-04-10T15:48:19.791] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes/BoxTheme
+[2019-04-10T15:48:19.792] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/widgets/MyLocation
+[2019-04-10T15:48:19.792] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v5/client/stemapp3d/themes/DartTheme
+[2019-04-10T15:54:02.691] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp/widgets
+[2019-04-10T15:54:03.399] [INFO] repo - insert HTML.About
+[2019-04-10T15:54:03.400] [INFO] repo - insert HTML.AddData
+[2019-04-10T15:54:03.400] [INFO] repo - insert HTML.Analysis
+[2019-04-10T15:54:03.402] [INFO] repo - insert HTML.AttributeTable
+[2019-04-10T15:54:03.403] [INFO] repo - insert HTML.BasemapGallery
+[2019-04-10T15:54:03.404] [INFO] repo - insert HTML.BatchAttributeEditor
+[2019-04-10T15:54:03.406] [INFO] repo - insert HTML.Bookmark
+[2019-04-10T15:54:03.407] [INFO] repo - insert HTML.Chart
+[2019-04-10T15:54:03.408] [INFO] repo - insert HTML.Coordinate
+[2019-04-10T15:54:03.409] [INFO] repo - insert HTML.CoordinateConversion
+[2019-04-10T15:54:03.410] [INFO] repo - insert HTML.CostAnalysis
+[2019-04-10T15:54:03.412] [INFO] repo - insert HTML.Curate
+[2019-04-10T15:54:03.413] [INFO] repo - insert HTML.DataAggregation
+[2019-04-10T15:54:03.415] [INFO] repo - insert HTML.Directions
+[2019-04-10T15:54:03.415] [INFO] repo - insert HTML.DistanceAndDirection
+[2019-04-10T15:54:03.415] [INFO] repo - insert HTML.DistrictLookup
+[2019-04-10T15:54:03.416] [INFO] repo - insert HTML.Draw
+[2019-04-10T15:54:03.416] [INFO] repo - insert HTML.Edit
+[2019-04-10T15:54:03.417] [INFO] repo - insert HTML.EmergencyResponseGuide
+[2019-04-10T15:54:03.417] [INFO] repo - insert HTML.ExtentNavigate
+[2019-04-10T15:54:03.419] [INFO] repo - insert HTML.Filter
+[2019-04-10T15:54:03.419] [INFO] repo - insert HTML.FullScreen
+[2019-04-10T15:54:03.420] [INFO] repo - insert HTML.GeoLookup
+[2019-04-10T15:54:03.421] [INFO] repo - insert HTML.Geoprocessing
+[2019-04-10T15:54:03.421] [INFO] repo - insert HTML.GridOverlay
+[2019-04-10T15:54:03.422] [INFO] repo - insert HTML.GriddedReferenceGraphic
+[2019-04-10T15:54:03.423] [INFO] repo - insert HTML.GroupFilter
+[2019-04-10T15:54:03.423] [INFO] repo - insert HTML.HomeButton
+[2019-04-10T15:54:03.424] [INFO] repo - insert HTML.ImageMeasurement
+[2019-04-10T15:54:03.424] [INFO] repo - insert HTML.IncidentAnalysis
+[2019-04-10T15:54:03.425] [INFO] repo - insert HTML.InfoSummary
+[2019-04-10T15:54:03.425] [INFO] repo - insert HTML.Infographic
+[2019-04-10T15:54:03.426] [INFO] repo - insert HTML.LayerList
+[2019-04-10T15:54:03.426] [INFO] repo - insert HTML.Legend
+[2019-04-10T15:54:03.427] [INFO] repo - insert HTML.Measurement
+[2019-04-10T15:54:03.427] [INFO] repo - insert HTML.MyLocation
+[2019-04-10T15:54:03.427] [INFO] repo - insert HTML.NearMe
+[2019-04-10T15:54:03.428] [INFO] repo - insert HTML.ObliqueViewer
+[2019-04-10T15:54:03.428] [INFO] repo - insert HTML.OverviewMap
+[2019-04-10T15:54:03.429] [INFO] repo - insert HTML.ParcelDrafter
+[2019-04-10T15:54:03.429] [INFO] repo - insert HTML.Print
+[2019-04-10T15:54:03.430] [INFO] repo - insert HTML.PublicNotification
+[2019-04-10T15:54:03.430] [INFO] repo - insert HTML.Query
+[2019-04-10T15:54:03.431] [INFO] repo - insert HTML.RelatedTableCharts
+[2019-04-10T15:54:03.431] [INFO] repo - insert HTML.ReportFeature
+[2019-04-10T15:54:03.432] [INFO] repo - insert HTML.ReviewerDashboard
+[2019-04-10T15:54:03.432] [INFO] repo - insert HTML.Scalebar
+[2019-04-10T15:54:03.433] [INFO] repo - insert HTML.Screening
+[2019-04-10T15:54:03.433] [INFO] repo - insert HTML.Search
+[2019-04-10T15:54:03.433] [INFO] repo - insert HTML.Select
+[2019-04-10T15:54:03.434] [INFO] repo - insert HTML.Share
+[2019-04-10T15:54:03.435] [INFO] repo - insert HTML.SituationAwareness
+[2019-04-10T15:54:03.435] [INFO] repo - insert HTML.SmartEditor
+[2019-04-10T15:54:03.436] [INFO] repo - insert HTML.Splash
+[2019-04-10T15:54:03.436] [INFO] repo - insert HTML.Stream
+[2019-04-10T15:54:03.436] [INFO] repo - insert HTML.SuitabilityModeler
+[2019-04-10T15:54:03.437] [INFO] repo - insert HTML.Summary
+[2019-04-10T15:54:03.437] [INFO] repo - insert HTML.Swipe
+[2019-04-10T15:54:03.438] [INFO] repo - insert HTML.ThreatAnalysis
+[2019-04-10T15:54:03.438] [INFO] repo - insert HTML.TimeSlider
+[2019-04-10T15:54:03.439] [INFO] repo - insert HTML.Visibility
+[2019-04-10T15:54:03.439] [INFO] repo - insert HTML.ZoomSlider
+[2019-04-10T15:54:03.441] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp/themes
+[2019-04-10T15:54:03.764] [INFO] repo - insert HTML.BillboardTheme
+[2019-04-10T15:54:03.765] [INFO] repo - insert HTML.BoxTheme
+[2019-04-10T15:54:03.766] [INFO] repo - insert HTML.DartTheme
+[2019-04-10T15:54:03.766] [INFO] repo - insert HTML.DashboardTheme
+[2019-04-10T15:54:03.767] [INFO] repo - insert HTML.FoldableTheme
+[2019-04-10T15:54:03.768] [INFO] repo - insert HTML.JewelryBoxTheme
+[2019-04-10T15:54:03.768] [INFO] repo - insert HTML.LaunchpadTheme
+[2019-04-10T15:54:03.770] [INFO] repo - insert HTML.PlateauTheme
+[2019-04-10T15:54:03.771] [INFO] repo - insert HTML.PocketTheme
+[2019-04-10T15:54:03.771] [INFO] repo - insert HTML.TabTheme
+[2019-04-10T15:54:03.772] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp3d/widgets
+[2019-04-10T15:54:04.245] [INFO] repo - insert HTML3D.3DFx
+[2019-04-10T15:54:04.246] [INFO] repo - insert HTML3D.About
+[2019-04-10T15:54:04.246] [INFO] repo - insert HTML3D.Compass
+[2019-04-10T15:54:04.247] [INFO] repo - insert HTML3D.BasemapGallery
+[2019-04-10T15:54:04.247] [INFO] repo - insert HTML3D.Coordinate
+[2019-04-10T15:54:04.247] [INFO] repo - insert HTML3D.Daylight
+[2019-04-10T15:54:04.248] [INFO] repo - insert HTML3D.FullScreen
+[2019-04-10T15:54:04.248] [INFO] repo - insert HTML3D.Home
+[2019-04-10T15:54:04.249] [INFO] repo - insert HTML3D.LayerList
+[2019-04-10T15:54:04.249] [INFO] repo - insert HTML3D.Legend
+[2019-04-10T15:54:04.249] [INFO] repo - insert HTML3D.Measurement3D
+[2019-04-10T15:54:04.250] [INFO] repo - insert HTML3D.MyLocation
+[2019-04-10T15:54:04.250] [INFO] repo - insert HTML3D.Search
+[2019-04-10T15:54:04.250] [INFO] repo - insert HTML3D.Navigate
+[2019-04-10T15:54:04.251] [INFO] repo - insert HTML3D.Share
+[2019-04-10T15:54:04.251] [INFO] repo - insert HTML3D.Slides
+[2019-04-10T15:54:04.252] [INFO] repo - insert HTML3D.Splash
+[2019-04-10T15:54:04.252] [INFO] repo - insert HTML3D.ZoomSlider
+[2019-04-10T15:54:04.253] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp3d/themes
+[2019-04-10T15:54:04.474] [INFO] repo - insert HTML3D.BillboardTheme
+[2019-04-10T15:54:04.475] [INFO] repo - insert HTML3D.DartTheme
+[2019-04-10T15:54:04.475] [INFO] repo - insert HTML3D.BoxTheme
+[2019-04-10T15:54:04.476] [INFO] repo - insert HTML3D.DashboardTheme
+[2019-04-10T15:54:04.476] [INFO] repo - insert HTML3D.FoldableTheme
+[2019-04-10T15:54:04.477] [INFO] repo - insert HTML3D.LaunchpadTheme
+[2019-04-10T15:54:04.477] [INFO] repo - insert HTML3D.JewelryBoxTheme
+[2019-04-10T15:54:04.478] [INFO] repo - insert HTML3D.TabTheme
+[2019-04-10T16:15:28.710] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp/widgets
+[2019-04-10T16:15:30.449] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp/themes
+[2019-04-10T16:15:30.757] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp3d/widgets
+[2019-04-10T16:15:31.198] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp3d/themes
+[2019-04-10T16:41:38.699] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp/widgets
+[2019-04-10T16:41:40.370] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp/themes
+[2019-04-10T16:41:40.686] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp3d/widgets
+[2019-04-10T16:41:41.167] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp3d/themes
+[2019-04-10T16:59:19.191] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp/widgets
+[2019-04-10T16:59:21.070] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp/themes
+[2019-04-10T16:59:21.402] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp3d/widgets
+[2019-04-10T16:59:21.966] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp3d/themes
+[2019-04-10T17:01:17.096] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp/widgets
+[2019-04-10T17:01:19.030] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp/themes
+[2019-04-10T17:01:19.380] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp3d/widgets
+[2019-04-10T17:01:19.897] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp3d/themes
+[2019-04-10T17:02:18.862] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp/widgets
+[2019-04-10T17:02:20.553] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp/themes
+[2019-04-10T17:02:20.864] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp3d/widgets
+[2019-04-10T17:02:21.296] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp3d/themes
+[2019-04-10T17:03:46.028] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp/widgets
+[2019-04-10T17:03:47.763] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp/themes
+[2019-04-10T17:03:48.104] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp3d/widgets
+[2019-04-10T17:03:48.581] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp3d/themes
+[2019-04-10T17:16:59.981] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp/widgets
+[2019-04-10T17:17:01.929] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp/themes
+[2019-04-10T17:17:02.307] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp3d/widgets
+[2019-04-10T17:17:02.853] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp3d/themes
+[2019-04-10T17:18:11.286] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp/widgets
+[2019-04-10T17:18:13.082] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp/themes
+[2019-04-10T17:18:13.405] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp3d/widgets
+[2019-04-10T17:18:13.893] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/client/stemapp3d/themes
+[2019-04-10T17:25:12.646] [INFO] default - No token is found, redirect /webappbuilder/?id=2 to /webappbuilder/?id=2&action=setportalurl
+[2019-04-10T17:25:12.647] [ERROR] default - Error: Cannot find module './lib/mediaType'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at loadModule (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/server/node_modules/negotiator/index.js:114:16)
+    at Negotiator.mediaTypes (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/server/node_modules/negotiator/index.js:76:29)
+    at Accepts.type.Accepts.types (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/server/node_modules/accepts/index.js:105:33)
+    at IncomingMessage.req.accepts (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/server/node_modules/express/lib/request.js:134:23)
+    at ServerResponse.res.format (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/server/node_modules/express/lib/response.js:664:11)
+    at ServerResponse.redirect (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/server/node_modules/express/lib/response.js:925:8)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/server/server.js:335:13
+    at Layer.handle [as handle_request] (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/server/node_modules/express/lib/router/index.js:317:13)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/server/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v6/server/node_modules/express/lib/router/index.js:275:10)
+[2019-04-10T17:25:30.613] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/widgets
+[2019-04-10T17:25:32.314] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/themes
+[2019-04-10T17:25:32.638] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/widgets
+[2019-04-10T17:25:33.106] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/themes
+[2019-04-10T17:25:44.714] [INFO] default - redirect  /webappbuilder/stemapp/index.html?id=2 to /webappbuilder/apps/2
+[2019-04-10T18:12:58.368] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/widgets
+[2019-04-10T18:13:00.130] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/themes
+[2019-04-10T18:13:00.436] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/widgets
+[2019-04-10T18:13:00.909] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/themes
+[2019-04-10T23:13:06.149] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/widgets
+[2019-04-10T23:13:07.879] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/themes
+[2019-04-10T23:13:08.200] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/widgets
+[2019-04-10T23:13:08.650] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/themes
+[2019-04-10T23:13:28.744] [INFO] default - redirect  /webappbuilder/stemapp/index.html?id=2 to /webappbuilder/apps/2
+[2019-04-10T23:44:29.031] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-10T23:45:31.434] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-10T23:47:25.377] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-10T23:48:01.161] [DEBUG] default - tcp protocol proxy error
+[2019-04-10T23:48:01.163] [DEBUG] default - on tcp proxy error
+[2019-04-10T23:49:39.256] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/widgets
+[2019-04-10T23:49:40.919] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/themes
+[2019-04-10T23:49:41.230] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/widgets
+[2019-04-10T23:49:41.674] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/themes
+[2019-04-10T23:54:44.634] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/widgets
+[2019-04-10T23:54:46.371] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/themes
+[2019-04-10T23:54:46.707] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/widgets
+[2019-04-10T23:54:47.245] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/themes
+[2019-04-10T23:59:58.968] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-10T23:59:59.182] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-11T00:00:26.644] [ERROR] default - Error: Unexpected end of multipart data
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/server/node_modules/dicer/lib/Dicer.js:62:28
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+[2019-04-11T00:00:32.997] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-11T00:00:35.168] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-11T00:00:35.340] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-11T00:00:35.583] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-11T00:00:35.793] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-11T00:00:37.017] [ERROR] default - BadRequestError: request aborted
+    at IncomingMessage.onAborted (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/server/node_modules/raw-body/index.js:231:10)
+    at IncomingMessage.emit (events.js:189:13)
+    at abortIncoming (_http_server.js:449:9)
+    at socketOnClose (_http_server.js:442:3)
+    at Socket.emit (events.js:194:15)
+    at TCP._handle.close (net.js:597:12)
+[2019-04-11T00:05:26.312] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-11T00:05:26.524] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-11T00:05:44.277] [ERROR] default - Error: Unexpected end of multipart data
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/server/node_modules/dicer/lib/Dicer.js:62:28
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+[2019-04-11T00:05:55.634] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-11T00:05:55.826] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-11T00:05:56.139] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-11T00:05:56.209] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-11T00:05:56.360] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-11T00:05:56.451] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-11T00:05:56.592] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-11T00:05:56.805] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-11T00:06:12.133] [ERROR] default - BadRequestError: request aborted
+    at IncomingMessage.onAborted (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/server/node_modules/raw-body/index.js:231:10)
+    at IncomingMessage.emit (events.js:189:13)
+    at abortIncoming (_http_server.js:449:9)
+    at socketOnClose (_http_server.js:442:3)
+    at TLSSocket.emit (events.js:194:15)
+    at _handle.close (net.js:597:12)
+    at Socket.done (_tls_wrap.js:388:7)
+    at Object.onceWrapper (events.js:277:13)
+    at Socket.emit (events.js:189:13)
+    at TCP._handle.close (net.js:597:12)
+[2019-04-11T00:25:51.508] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/widgets
+[2019-04-11T00:25:53.242] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/themes
+[2019-04-11T00:25:53.583] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/widgets
+[2019-04-11T00:25:54.092] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/themes
+[2019-04-11T00:40:24.119] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/widgets
+[2019-04-11T00:40:25.887] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/themes
+[2019-04-11T00:40:26.237] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/widgets
+[2019-04-11T00:40:26.718] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/themes
+[2019-04-11T01:52:33.973] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/widgets
+[2019-04-11T01:52:35.757] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/themes
+[2019-04-11T01:52:36.110] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/widgets
+[2019-04-11T01:52:36.586] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/themes
+[2019-04-11T01:53:38.934] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/widgets
+[2019-04-11T01:53:40.663] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/themes
+[2019-04-11T01:53:40.984] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/widgets
+[2019-04-11T01:53:41.556] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/themes
+[2019-04-11T02:41:37.457] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/widgets
+[2019-04-11T02:41:39.206] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/themes
+[2019-04-11T02:41:39.514] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/widgets
+[2019-04-11T02:41:39.964] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/themes
+[2019-04-11T02:44:40.328] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/widgets
+[2019-04-11T02:44:42.097] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/themes
+[2019-04-11T02:44:42.439] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/widgets
+[2019-04-11T02:44:43.048] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/themes
+[2019-04-11T02:51:28.905] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/widgets
+[2019-04-11T02:51:30.718] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/themes
+[2019-04-11T02:51:31.070] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/widgets
+[2019-04-11T02:51:31.683] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/themes
+[2019-04-11T02:52:03.477] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/widgets
+[2019-04-11T02:52:05.223] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/themes
+[2019-04-11T02:52:05.583] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/widgets
+[2019-04-11T02:52:06.037] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/themes
+[2019-04-11T02:53:11.229] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/widgets
+[2019-04-11T02:53:12.966] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/themes
+[2019-04-11T02:53:13.284] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/widgets
+[2019-04-11T02:53:13.768] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/themes
+[2019-04-11T02:57:46.023] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/widgets
+[2019-04-11T02:57:47.695] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/themes
+[2019-04-11T02:57:48.003] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/widgets
+[2019-04-11T02:57:48.494] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/themes
+[2019-04-11T03:46:53.878] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/widgets
+[2019-04-11T03:46:55.595] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/themes
+[2019-04-11T03:46:55.914] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/widgets
+[2019-04-11T03:46:56.384] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/themes
+[2019-04-11T03:50:02.992] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/widgets
+[2019-04-11T03:50:04.748] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/themes
+[2019-04-11T03:50:05.062] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/widgets
+[2019-04-11T03:50:05.499] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/themes
+[2019-04-11T03:52:39.640] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/widgets
+[2019-04-11T03:52:41.345] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp/themes
+[2019-04-11T03:52:41.649] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/widgets
+[2019-04-11T03:52:42.100] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v7/client/stemapp3d/themes
+[2019-04-11T10:07:23.577] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v8/client/stemapp/widgets
+[2019-04-11T10:07:25.281] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v8/client/stemapp/themes
+[2019-04-11T10:07:25.598] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v8/client/stemapp3d/widgets
+[2019-04-11T10:07:26.013] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v8/client/stemapp3d/themes
+[2019-04-11T10:37:49.601] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v8/client/stemapp/widgets
+[2019-04-11T10:37:51.337] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v8/client/stemapp/themes
+[2019-04-11T10:37:51.640] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v8/client/stemapp3d/widgets
+[2019-04-11T10:37:52.055] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v8/client/stemapp3d/themes
+[2019-04-11T11:04:24.528] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/widgets
+[2019-04-11T11:04:26.340] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/themes
+[2019-04-11T11:04:26.657] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/widgets
+[2019-04-11T11:04:27.181] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/themes
+[2019-04-11T11:05:45.069] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/widgets
+[2019-04-11T11:05:46.729] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/themes
+[2019-04-11T11:05:47.064] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/widgets
+[2019-04-11T11:05:47.510] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/themes
+[2019-04-11T11:06:40.067] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/widgets
+[2019-04-11T11:06:41.792] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/themes
+[2019-04-11T11:06:42.117] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/widgets
+[2019-04-11T11:06:42.660] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/themes
+[2019-04-11T11:08:43.609] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/widgets
+[2019-04-11T11:08:45.314] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/themes
+[2019-04-11T11:08:45.639] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/widgets
+[2019-04-11T11:08:46.101] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/themes
+[2019-04-11T11:08:58.810] [INFO] default - redirect  /webappbuilder/stemapp/index.html?id=2 to /webappbuilder/apps/2
+[2019-04-11T11:09:51.510] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/widgets
+[2019-04-11T11:09:53.162] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/themes
+[2019-04-11T11:09:53.482] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/widgets
+[2019-04-11T11:09:53.935] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/themes
+[2019-04-11T11:10:23.670] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/widgets
+[2019-04-11T11:10:25.400] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/themes
+[2019-04-11T11:10:25.692] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/widgets
+[2019-04-11T11:10:26.108] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/themes
+[2019-04-11T11:10:48.051] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/widgets
+[2019-04-11T11:10:49.803] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/themes
+[2019-04-11T11:10:50.129] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/widgets
+[2019-04-11T11:10:50.603] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/themes
+[2019-04-11T11:14:34.460] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/widgets
+[2019-04-11T11:14:36.180] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/themes
+[2019-04-11T11:14:36.506] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/widgets
+[2019-04-11T11:14:36.969] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/themes
+[2019-04-11T11:21:10.108] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/widgets
+[2019-04-11T11:21:11.813] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/themes
+[2019-04-11T11:21:12.131] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/widgets
+[2019-04-11T11:21:12.555] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/themes
+[2019-04-11T14:15:13.091] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/widgets
+[2019-04-11T14:15:14.786] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/themes
+[2019-04-11T14:15:15.117] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/widgets
+[2019-04-11T14:15:15.609] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/themes
+[2019-04-11T14:33:55.495] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/widgets
+[2019-04-11T14:33:57.127] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/themes
+[2019-04-11T14:33:57.417] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/widgets
+[2019-04-11T14:33:57.884] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/themes
+[2019-04-11T14:34:35.113] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/widgets
+[2019-04-11T14:34:36.803] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp/themes
+[2019-04-11T14:34:37.122] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/widgets
+[2019-04-11T14:34:37.555] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v9/client/stemapp3d/themes
+[2019-04-11T14:38:54.192] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/widgets
+[2019-04-11T14:38:55.937] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/themes
+[2019-04-11T14:38:56.259] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/widgets
+[2019-04-11T14:38:56.701] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/themes
+[2019-04-11T14:58:40.577] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/widgets
+[2019-04-11T14:58:42.245] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/themes
+[2019-04-11T14:58:42.539] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/widgets
+[2019-04-11T14:58:42.998] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/themes
+[2019-04-11T15:10:27.087] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/widgets
+[2019-04-11T15:10:28.809] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/themes
+[2019-04-11T15:10:29.110] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/widgets
+[2019-04-11T15:10:29.572] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/themes
+[2019-04-11T15:19:30.670] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/widgets
+[2019-04-11T15:19:32.362] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/themes
+[2019-04-11T15:19:32.673] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/widgets
+[2019-04-11T15:19:33.101] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/themes
+[2019-04-11T15:23:58.415] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/widgets
+[2019-04-11T15:24:00.110] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/themes
+[2019-04-11T15:24:00.434] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/widgets
+[2019-04-11T15:24:00.946] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/themes
+[2019-04-11T15:27:43.772] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/widgets
+[2019-04-11T15:27:45.574] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/themes
+[2019-04-11T15:27:45.900] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/widgets
+[2019-04-11T15:27:46.421] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/themes
+[2019-04-11T15:31:05.093] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/widgets
+[2019-04-11T15:31:06.777] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/themes
+[2019-04-11T15:31:07.107] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/widgets
+[2019-04-11T15:31:07.550] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/themes
+[2019-04-11T15:43:41.174] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/widgets
+[2019-04-11T15:43:42.892] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/themes
+[2019-04-11T15:43:43.225] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/widgets
+[2019-04-11T15:43:43.673] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/themes
+[2019-04-11T15:50:00.204] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/widgets
+[2019-04-11T15:50:01.940] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/themes
+[2019-04-11T15:50:02.276] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/widgets
+[2019-04-11T15:50:02.793] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/themes
+[2019-04-11T16:09:43.163] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/widgets
+[2019-04-11T16:09:44.850] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp/themes
+[2019-04-11T16:09:45.161] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/widgets
+[2019-04-11T16:09:45.601] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v10/client/stemapp3d/themes
+[2019-04-11T16:27:59.348] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T16:28:00.984] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T16:28:01.328] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T16:28:01.781] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T17:37:49.911] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T17:37:51.601] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T17:37:51.904] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T17:37:52.333] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T17:42:26.950] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T17:42:28.636] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T17:42:28.969] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T17:42:29.471] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T18:02:10.730] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T18:02:12.477] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T18:02:12.791] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T18:02:13.255] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T18:02:49.297] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T18:02:51.057] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T18:02:51.375] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T18:02:51.888] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T18:20:32.876] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T18:20:34.648] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T18:20:35.079] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T18:20:35.608] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T18:21:35.089] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T18:21:36.931] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T18:21:37.345] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T18:21:37.867] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T18:33:02.970] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T18:33:04.971] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T18:33:05.382] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T18:33:05.909] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T18:41:59.360] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T18:42:01.390] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T18:42:01.821] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T18:42:02.304] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T18:47:20.439] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T18:47:22.445] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T18:47:22.857] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T18:47:23.390] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T18:53:47.846] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T18:53:49.940] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T18:53:50.372] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T18:53:50.972] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T18:59:17.408] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T18:59:19.535] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T18:59:19.956] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T18:59:20.445] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T19:09:07.642] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T19:09:09.744] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T19:09:10.198] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T19:09:10.698] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T19:13:25.605] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T19:13:27.704] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T19:13:28.151] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T19:13:28.700] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T19:14:13.012] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T19:14:15.054] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T19:14:15.483] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T19:14:16.125] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T19:33:41.160] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T19:33:43.231] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T19:33:43.654] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T19:33:44.147] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T19:38:32.384] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T19:38:34.483] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T19:38:34.953] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T19:38:35.606] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T19:45:48.131] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T19:45:50.271] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T19:45:50.702] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T19:45:51.563] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T19:57:36.381] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T19:57:38.531] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T19:57:38.999] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T19:57:39.597] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T20:02:28.558] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T20:02:30.682] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T20:02:31.135] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T20:02:31.664] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T20:04:16.839] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T20:04:18.990] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T20:04:19.433] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T20:04:20.342] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T20:05:48.429] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T20:05:50.534] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T20:05:50.957] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T20:05:51.466] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T20:07:14.163] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T20:07:16.313] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T20:07:16.851] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T20:07:17.343] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T20:07:44.025] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets
+[2019-04-11T20:07:45.840] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes
+[2019-04-11T20:07:46.272] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets
+[2019-04-11T20:07:46.906] [INFO] repo - Read repository items: /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes
+[2019-04-11T20:08:10.054] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes/BillboardTheme
+[2019-04-11T20:08:10.065] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes/TabTheme
+[2019-04-11T20:08:10.076] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes/DashboardTheme
+[2019-04-11T20:08:10.086] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes/BoxTheme
+[2019-04-11T20:08:10.097] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes/LaunchpadTheme
+[2019-04-11T20:08:10.107] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes/JewelryBoxTheme
+[2019-04-11T20:08:10.118] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes/DartTheme
+[2019-04-11T20:08:10.128] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/themes/FoldableTheme
+[2019-04-11T20:08:10.138] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/AddData
+[2019-04-11T20:08:10.147] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/BatchAttributeEditor
+[2019-04-11T20:08:10.155] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Analysis
+[2019-04-11T20:08:10.165] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/About
+[2019-04-11T20:08:10.174] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/BasemapGallery
+[2019-04-11T20:08:10.183] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/AttributeTable
+[2019-04-11T20:08:10.193] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Bookmark
+[2019-04-11T20:08:10.202] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Coordinate
+[2019-04-11T20:08:10.211] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/CoordinateConversion
+[2019-04-11T20:08:10.220] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Curate
+[2019-04-11T20:08:10.228] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/CostAnalysis
+[2019-04-11T20:08:10.237] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Directions
+[2019-04-11T20:08:10.245] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Chart
+[2019-04-11T20:08:10.254] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Filter
+[2019-04-11T20:08:10.261] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Edit
+[2019-04-11T20:08:10.269] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/DataAggregation
+[2019-04-11T20:08:10.278] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/ExtentNavigate
+[2019-04-11T20:08:10.287] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/DistrictLookup
+[2019-04-11T20:08:10.296] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/FullScreen
+[2019-04-11T20:08:10.304] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/EmergencyResponseGuide
+[2019-04-11T20:08:10.311] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Draw
+[2019-04-11T20:08:10.320] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/DistanceAndDirection
+[2019-04-11T20:08:10.327] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/GeoLookup
+[2019-04-11T20:08:10.334] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/HomeButton
+[2019-04-11T20:08:10.342] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/GroupFilter
+[2019-04-11T20:08:10.349] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Geoprocessing
+[2019-04-11T20:08:10.356] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/GriddedReferenceGraphic
+[2019-04-11T20:08:10.363] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/GridOverlay
+[2019-04-11T20:08:10.369] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Infographic
+[2019-04-11T20:08:10.376] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/InfoSummary
+[2019-04-11T20:08:10.383] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/ImageMeasurement
+[2019-04-11T20:08:10.389] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Legend
+[2019-04-11T20:08:10.396] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/LayerList
+[2019-04-11T20:08:10.402] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Measurement
+[2019-04-11T20:08:10.409] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/NearMe
+[2019-04-11T20:08:10.415] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/IncidentAnalysis
+[2019-04-11T20:08:10.422] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Query
+[2019-04-11T20:08:10.428] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/ObliqueViewer
+[2019-04-11T20:08:10.434] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/PublicNotification
+[2019-04-11T20:08:10.442] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/MyLocation
+[2019-04-11T20:08:10.449] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/OverviewMap
+[2019-04-11T20:08:10.456] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Print
+[2019-04-11T20:08:10.463] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/ParcelDrafter
+[2019-04-11T20:08:10.470] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/RelatedTableCharts
+[2019-04-11T20:08:10.476] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/ReviewerDashboard
+[2019-04-11T20:08:10.482] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/ReportFeature
+[2019-04-11T20:08:10.489] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Share
+[2019-04-11T20:08:10.495] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Scalebar
+[2019-04-11T20:08:10.501] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Splash
+[2019-04-11T20:08:10.506] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Screening
+[2019-04-11T20:08:10.513] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Search
+[2019-04-11T20:08:10.520] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/SituationAwareness
+[2019-04-11T20:08:10.526] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/SuitabilityModeler
+[2019-04-11T20:08:10.531] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Select
+[2019-04-11T20:08:10.536] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Stream
+[2019-04-11T20:08:10.541] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Visibility
+[2019-04-11T20:08:10.545] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Swipe
+[2019-04-11T20:08:10.549] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/Summary
+[2019-04-11T20:08:10.554] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/SmartEditor
+[2019-04-11T20:08:10.558] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/ThreatAnalysis
+[2019-04-11T20:08:10.563] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/TimeSlider
+[2019-04-11T20:08:10.567] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/widgets/ZoomSlider
+[2019-04-11T20:08:10.570] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes/BoxTheme
+[2019-04-11T20:08:10.574] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes/FoldableTheme
+[2019-04-11T20:08:10.580] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes/DartTheme
+[2019-04-11T20:08:10.584] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes/BillboardTheme
+[2019-04-11T20:08:10.587] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes/PlateauTheme
+[2019-04-11T20:08:10.590] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes/DashboardTheme
+[2019-04-11T20:08:10.593] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes/LaunchpadTheme
+[2019-04-11T20:08:10.596] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes/TabTheme
+[2019-04-11T20:08:10.598] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes/PocketTheme
+[2019-04-11T20:08:10.600] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp/themes/JewelryBoxTheme
+[2019-04-11T20:08:10.602] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets/Compass
+[2019-04-11T20:08:10.605] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets/About
+[2019-04-11T20:08:10.607] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets/Coordinate
+[2019-04-11T20:08:10.609] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets/3DFx
+[2019-04-11T20:08:10.612] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets/BasemapGallery
+[2019-04-11T20:08:10.614] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets/Daylight
+[2019-04-11T20:08:10.616] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets/Home
+[2019-04-11T20:08:10.618] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets/FullScreen
+[2019-04-11T20:08:10.619] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets/LayerList
+[2019-04-11T20:08:10.620] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets/Search
+[2019-04-11T20:08:10.621] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets/Measurement3D
+[2019-04-11T20:08:10.622] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets/Legend
+[2019-04-11T20:08:10.623] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets/Share
+[2019-04-11T20:08:10.624] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets/Splash
+[2019-04-11T20:08:10.625] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets/Slides
+[2019-04-11T20:08:10.626] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets/ZoomSlider
+[2019-04-11T20:08:10.627] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets/MyLocation
+[2019-04-11T20:08:10.627] [INFO] repo - delete /Users/zhayan/Desktop/WebAppBuilderForArcGIS_worked_v11/client/stemapp3d/widgets/Navigate
+[2019-04-11T20:15:51.336] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_gai/client/stemapp/widgets
+[2019-04-11T20:15:52.026] [INFO] repo - insert HTML.About
+[2019-04-11T20:15:52.026] [INFO] repo - insert HTML.AddData
+[2019-04-11T20:15:52.027] [INFO] repo - insert HTML.Analysis
+[2019-04-11T20:15:52.028] [INFO] repo - insert HTML.AttributeTable
+[2019-04-11T20:15:52.028] [INFO] repo - insert HTML.BasemapGallery
+[2019-04-11T20:15:52.028] [INFO] repo - insert HTML.BatchAttributeEditor
+[2019-04-11T20:15:52.029] [INFO] repo - insert HTML.Bookmark
+[2019-04-11T20:15:52.029] [INFO] repo - insert HTML.Chart
+[2019-04-11T20:15:52.030] [INFO] repo - insert HTML.Coordinate
+[2019-04-11T20:15:52.030] [INFO] repo - insert HTML.CoordinateConversion
+[2019-04-11T20:15:52.031] [INFO] repo - insert HTML.CostAnalysis
+[2019-04-11T20:15:52.031] [INFO] repo - insert HTML.Curate
+[2019-04-11T20:15:52.031] [INFO] repo - insert HTML.DataAggregation
+[2019-04-11T20:15:52.032] [INFO] repo - insert HTML.Directions
+[2019-04-11T20:15:52.033] [INFO] repo - insert HTML.DistanceAndDirection
+[2019-04-11T20:15:52.033] [INFO] repo - insert HTML.DistrictLookup
+[2019-04-11T20:15:52.034] [INFO] repo - insert HTML.Draw
+[2019-04-11T20:15:52.034] [INFO] repo - insert HTML.Edit
+[2019-04-11T20:15:52.035] [INFO] repo - insert HTML.EmergencyResponseGuide
+[2019-04-11T20:15:52.035] [INFO] repo - insert HTML.ExtentNavigate
+[2019-04-11T20:15:52.036] [INFO] repo - insert HTML.Filter
+[2019-04-11T20:15:52.037] [INFO] repo - insert HTML.FullScreen
+[2019-04-11T20:15:52.037] [INFO] repo - insert HTML.GeoLookup
+[2019-04-11T20:15:52.038] [INFO] repo - insert HTML.Geoprocessing
+[2019-04-11T20:15:52.038] [INFO] repo - insert HTML.GridOverlay
+[2019-04-11T20:15:52.039] [INFO] repo - insert HTML.GriddedReferenceGraphic
+[2019-04-11T20:15:52.040] [INFO] repo - insert HTML.GroupFilter
+[2019-04-11T20:15:52.041] [INFO] repo - insert HTML.HomeButton
+[2019-04-11T20:15:52.042] [INFO] repo - insert HTML.ImageMeasurement
+[2019-04-11T20:15:52.043] [INFO] repo - insert HTML.IncidentAnalysis
+[2019-04-11T20:15:52.044] [INFO] repo - insert HTML.InfoSummary
+[2019-04-11T20:15:52.045] [INFO] repo - insert HTML.Infographic
+[2019-04-11T20:15:52.046] [INFO] repo - insert HTML.LayerList
+[2019-04-11T20:15:52.047] [INFO] repo - insert HTML.Legend
+[2019-04-11T20:15:52.048] [INFO] repo - insert HTML.Measurement
+[2019-04-11T20:15:52.049] [INFO] repo - insert HTML.MyLocation
+[2019-04-11T20:15:52.050] [INFO] repo - insert HTML.NearMe
+[2019-04-11T20:15:52.051] [INFO] repo - insert HTML.ObliqueViewer
+[2019-04-11T20:15:52.051] [INFO] repo - insert HTML.OverviewMap
+[2019-04-11T20:15:52.052] [INFO] repo - insert HTML.ParcelDrafter
+[2019-04-11T20:15:52.052] [INFO] repo - insert HTML.Print
+[2019-04-11T20:15:52.053] [INFO] repo - insert HTML.PublicNotification
+[2019-04-11T20:15:52.053] [INFO] repo - insert HTML.Query
+[2019-04-11T20:15:52.054] [INFO] repo - insert HTML.RelatedTableCharts
+[2019-04-11T20:15:52.054] [INFO] repo - insert HTML.ReportFeature
+[2019-04-11T20:15:52.055] [INFO] repo - insert HTML.ReviewerDashboard
+[2019-04-11T20:15:52.055] [INFO] repo - insert HTML.Scalebar
+[2019-04-11T20:15:52.056] [INFO] repo - insert HTML.Screening
+[2019-04-11T20:15:52.056] [INFO] repo - insert HTML.Search
+[2019-04-11T20:15:52.057] [INFO] repo - insert HTML.Select
+[2019-04-11T20:15:52.057] [INFO] repo - insert HTML.Share
+[2019-04-11T20:15:52.058] [INFO] repo - insert HTML.SituationAwareness
+[2019-04-11T20:15:52.059] [INFO] repo - insert HTML.SmartEditor
+[2019-04-11T20:15:52.059] [INFO] repo - insert HTML.Splash
+[2019-04-11T20:15:52.059] [INFO] repo - insert HTML.Stream
+[2019-04-11T20:15:52.060] [INFO] repo - insert HTML.SuitabilityModeler
+[2019-04-11T20:15:52.060] [INFO] repo - insert HTML.Summary
+[2019-04-11T20:15:52.061] [INFO] repo - insert HTML.Swipe
+[2019-04-11T20:15:52.061] [INFO] repo - insert HTML.ThreatAnalysis
+[2019-04-11T20:15:52.062] [INFO] repo - insert HTML.TimeSlider
+[2019-04-11T20:15:52.062] [INFO] repo - insert HTML.Visibility
+[2019-04-11T20:15:52.063] [INFO] repo - insert HTML.ZoomSlider
+[2019-04-11T20:15:52.064] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_gai/client/stemapp/themes
+[2019-04-11T20:15:52.380] [INFO] repo - insert HTML.BoxTheme
+[2019-04-11T20:15:52.381] [INFO] repo - insert HTML.DartTheme
+[2019-04-11T20:15:52.382] [INFO] repo - insert HTML.BillboardTheme
+[2019-04-11T20:15:52.383] [INFO] repo - insert HTML.DashboardTheme
+[2019-04-11T20:15:52.383] [INFO] repo - insert HTML.JewelryBoxTheme
+[2019-04-11T20:15:52.384] [INFO] repo - insert HTML.FoldableTheme
+[2019-04-11T20:15:52.385] [INFO] repo - insert HTML.LaunchpadTheme
+[2019-04-11T20:15:52.385] [INFO] repo - insert HTML.PlateauTheme
+[2019-04-11T20:15:52.386] [INFO] repo - insert HTML.TabTheme
+[2019-04-11T20:15:52.387] [INFO] repo - insert HTML.PocketTheme
+[2019-04-11T20:15:52.387] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_gai/client/stemapp3d/widgets
+[2019-04-11T20:15:52.861] [INFO] repo - insert HTML3D.3DFx
+[2019-04-11T20:15:52.861] [INFO] repo - insert HTML3D.About
+[2019-04-11T20:15:52.862] [INFO] repo - insert HTML3D.BasemapGallery
+[2019-04-11T20:15:52.864] [INFO] repo - insert HTML3D.Compass
+[2019-04-11T20:15:52.865] [INFO] repo - insert HTML3D.Coordinate
+[2019-04-11T20:15:52.867] [INFO] repo - insert HTML3D.Daylight
+[2019-04-11T20:15:52.868] [INFO] repo - insert HTML3D.FullScreen
+[2019-04-11T20:15:52.869] [INFO] repo - insert HTML3D.Home
+[2019-04-11T20:15:52.871] [INFO] repo - insert HTML3D.LayerList
+[2019-04-11T20:15:52.871] [INFO] repo - insert HTML3D.Legend
+[2019-04-11T20:15:52.872] [INFO] repo - insert HTML3D.Measurement3D
+[2019-04-11T20:15:52.872] [INFO] repo - insert HTML3D.MyLocation
+[2019-04-11T20:15:52.873] [INFO] repo - insert HTML3D.Navigate
+[2019-04-11T20:15:52.874] [INFO] repo - insert HTML3D.Search
+[2019-04-11T20:15:52.874] [INFO] repo - insert HTML3D.Share
+[2019-04-11T20:15:52.875] [INFO] repo - insert HTML3D.Slides
+[2019-04-11T20:15:52.875] [INFO] repo - insert HTML3D.Splash
+[2019-04-11T20:15:52.876] [INFO] repo - insert HTML3D.ZoomSlider
+[2019-04-11T20:15:52.876] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_gai/client/stemapp3d/themes
+[2019-04-11T20:15:53.111] [INFO] repo - insert HTML3D.BillboardTheme
+[2019-04-11T20:15:53.112] [INFO] repo - insert HTML3D.BoxTheme
+[2019-04-11T20:15:53.112] [INFO] repo - insert HTML3D.DartTheme
+[2019-04-11T20:15:53.113] [INFO] repo - insert HTML3D.DashboardTheme
+[2019-04-11T20:15:53.113] [INFO] repo - insert HTML3D.LaunchpadTheme
+[2019-04-11T20:15:53.114] [INFO] repo - insert HTML3D.FoldableTheme
+[2019-04-11T20:15:53.114] [INFO] repo - insert HTML3D.JewelryBoxTheme
+[2019-04-11T20:15:53.116] [INFO] repo - insert HTML3D.TabTheme
+[2019-04-11T20:18:44.511] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_gai/client/stemapp/widgets
+[2019-04-11T20:18:46.357] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_gai/client/stemapp/themes
+[2019-04-11T20:18:46.694] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_gai/client/stemapp3d/widgets
+[2019-04-11T20:18:47.235] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_gai/client/stemapp3d/themes
+[2019-04-11T20:21:35.929] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_gai/client/stemapp/widgets
+[2019-04-11T20:21:37.751] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_gai/client/stemapp/themes
+[2019-04-11T20:21:38.112] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_gai/client/stemapp3d/widgets
+[2019-04-11T20:21:38.596] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_gai/client/stemapp3d/themes
+[2019-04-12T16:08:37.734] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/widgets
+[2019-04-12T16:08:39.439] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/themes
+[2019-04-12T16:08:39.748] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp3d/widgets
+[2019-04-12T16:08:40.212] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp3d/themes
+[2019-04-12T16:09:04.891] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-12T16:28:55.640] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-12T17:30:05.901] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/widgets
+[2019-04-12T17:30:07.595] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/themes
+[2019-04-12T17:30:07.906] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp3d/widgets
+[2019-04-12T17:30:08.351] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp3d/themes
+[2019-04-12T17:30:17.715] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-12T18:16:35.304] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/widgets
+[2019-04-12T18:16:37.039] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/themes
+[2019-04-12T18:16:37.348] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp3d/widgets
+[2019-04-12T18:16:37.814] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp3d/themes
+[2019-04-12T18:35:40.386] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/jimu.js
+[2019-04-12T18:35:40.474] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/images
+[2019-04-12T18:35:40.475] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/libs
+[2019-04-12T18:35:40.485] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/index.html
+[2019-04-12T18:35:40.485] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/env.js
+[2019-04-12T18:35:40.485] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/simpleLoader.js
+[2019-04-12T18:35:40.486] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/init.js
+[2019-04-12T18:35:40.486] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/web.config
+[2019-04-12T18:35:40.486] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/dynamic-modules
+[2019-04-12T18:35:40.487] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/readme.html
+[2019-04-12T18:35:40.488] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/config-readme.txt
+[2019-04-12T18:35:40.488] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/configs
+[2019-04-12T18:35:40.489] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/.jshintrc
+[2019-04-12T18:35:40.490] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/.jshintignore
+[2019-04-12T18:35:40.490] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/3rd-party-license.txt
+[2019-04-12T18:35:40.497] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/themes/FoldableTheme
+[2019-04-12T18:35:40.539] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/widgets/Scalebar
+[2019-04-12T18:35:40.555] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/widgets/Search
+[2019-04-12T18:35:40.572] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/widgets/Coordinate
+[2019-04-12T18:35:40.589] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/widgets/OverviewMap
+[2019-04-12T18:35:40.605] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/widgets/HomeButton
+[2019-04-12T18:35:40.613] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/widgets/MyLocation
+[2019-04-12T18:35:40.630] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/widgets/AttributeTable
+[2019-04-12T18:35:40.651] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/widgets/Splash
+[2019-04-12T18:35:40.672] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/widgets/ZoomSlider
+[2019-04-12T18:35:40.681] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/widgets/ExtentNavigate
+[2019-04-12T18:35:40.690] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/widgets/FullScreen
+[2019-04-12T18:35:40.700] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/widgets/Legend
+[2019-04-12T18:35:40.719] [DEBUG] utils - copy /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/widgets/LayerList
+[2019-04-13T02:12:45.091] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-13T02:13:56.163] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-13T02:14:14.434] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-13T02:15:54.191] [DEBUG] default - tcp protocol proxy error
+[2019-04-13T02:15:54.193] [DEBUG] default - on tcp proxy error
+[2019-04-16T11:02:58.664] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/widgets
+[2019-04-16T11:03:00.425] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/themes
+[2019-04-16T11:03:00.740] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp3d/widgets
+[2019-04-16T11:03:01.246] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp3d/themes
+[2019-04-16T11:04:03.604] [INFO] app - App removed, id: 3
+[2019-04-16T11:04:04.599] [INFO] default - redirect  /webappbuilder/stemapp/index.html?id=2 to /webappbuilder/apps/2
+[2019-04-16T12:29:41.583] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/widgets
+[2019-04-16T12:29:43.282] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/themes
+[2019-04-16T12:29:43.612] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp3d/widgets
+[2019-04-16T12:29:44.066] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp3d/themes
+[2019-04-16T12:30:00.378] [INFO] default - redirect  /webappbuilder/stemapp/index.html?id=2 to /webappbuilder/apps/2
+[2019-04-16T12:47:58.182] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/widgets
+[2019-04-16T12:47:59.958] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp/themes
+[2019-04-16T12:48:00.279] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp3d/widgets
+[2019-04-16T12:48:00.746] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/client/stemapp3d/themes
+[2019-04-17T08:37:16.243] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-17T08:40:18.139] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-17T08:40:24.818] [ERROR] default - Error: Cannot find module './lib/mediaType'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at loadModule (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/negotiator/index.js:114:16)
+    at Negotiator.mediaTypes (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/negotiator/index.js:76:29)
+    at Accepts.type.Accepts.types (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/accepts/index.js:105:33)
+    at IncomingMessage.req.accepts (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/request.js:134:23)
+    at ServerResponse.res.format (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/response.js:664:11)
+    at ServerResponse.redirect (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/response.js:925:8)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/server.js:249:11
+    at Layer.handle [as handle_request] (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:317:13)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:275:10)
+[2019-04-17T08:40:25.000] [ERROR] default - Error: Cannot find module './lib/mediaType'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at loadModule (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/negotiator/index.js:114:16)
+    at Negotiator.mediaTypes (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/negotiator/index.js:76:29)
+    at Accepts.type.Accepts.types (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/accepts/index.js:105:33)
+    at IncomingMessage.req.accepts (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/request.js:134:23)
+    at ServerResponse.res.format (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/response.js:664:11)
+    at ServerResponse.redirect (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/response.js:925:8)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/server.js:249:11
+    at Layer.handle [as handle_request] (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:317:13)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:275:10)
+[2019-04-17T08:40:31.229] [ERROR] default - Error: Cannot find module './lib/mediaType'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at loadModule (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/negotiator/index.js:114:16)
+    at Negotiator.mediaTypes (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/negotiator/index.js:76:29)
+    at Accepts.type.Accepts.types (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/accepts/index.js:105:33)
+    at IncomingMessage.req.accepts (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/request.js:134:23)
+    at ServerResponse.res.format (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/response.js:664:11)
+    at ServerResponse.redirect (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/response.js:925:8)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/server.js:249:11
+    at Layer.handle [as handle_request] (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:317:13)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:275:10)
+[2019-04-17T08:40:40.601] [ERROR] default - Error: Unexpected end of multipart data
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/dicer/lib/Dicer.js:62:28
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+[2019-04-17T08:40:40.952] [ERROR] default - Error: Cannot find module './lib/mediaType'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at loadModule (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/negotiator/index.js:114:16)
+    at Negotiator.mediaTypes (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/negotiator/index.js:76:29)
+    at Accepts.type.Accepts.types (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/accepts/index.js:105:33)
+    at IncomingMessage.req.accepts (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/request.js:134:23)
+    at ServerResponse.res.format (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/response.js:664:11)
+    at ServerResponse.redirect (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/response.js:925:8)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/server.js:249:11
+    at Layer.handle [as handle_request] (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:317:13)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:275:10)
+[2019-04-17T08:40:41.063] [ERROR] default - Error: Cannot find module './lib/mediaType'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at loadModule (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/negotiator/index.js:114:16)
+    at Negotiator.mediaTypes (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/negotiator/index.js:76:29)
+    at Accepts.type.Accepts.types (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/accepts/index.js:105:33)
+    at IncomingMessage.req.accepts (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/request.js:134:23)
+    at ServerResponse.res.format (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/response.js:664:11)
+    at ServerResponse.redirect (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/response.js:925:8)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/server.js:249:11
+    at Layer.handle [as handle_request] (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:317:13)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:275:10)
+[2019-04-17T08:40:41.214] [ERROR] default - Error: Cannot find module './lib/mediaType'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at loadModule (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/negotiator/index.js:114:16)
+    at Negotiator.mediaTypes (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/negotiator/index.js:76:29)
+    at Accepts.type.Accepts.types (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/accepts/index.js:105:33)
+    at IncomingMessage.req.accepts (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/request.js:134:23)
+    at ServerResponse.res.format (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/response.js:664:11)
+    at ServerResponse.redirect (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/response.js:925:8)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/server.js:249:11
+    at Layer.handle [as handle_request] (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:317:13)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:275:10)
+[2019-04-17T08:40:43.203] [ERROR] default - Error: Cannot find module './lib/mediaType'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at loadModule (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/negotiator/index.js:114:16)
+    at Negotiator.mediaTypes (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/negotiator/index.js:76:29)
+    at Accepts.type.Accepts.types (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/accepts/index.js:105:33)
+    at IncomingMessage.req.accepts (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/request.js:134:23)
+    at ServerResponse.res.format (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/response.js:664:11)
+    at ServerResponse.redirect (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/response.js:925:8)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/server.js:249:11
+    at Layer.handle [as handle_request] (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:317:13)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:275:10)
+[2019-04-17T08:40:48.423] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-17T08:40:48.659] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-17T08:40:49.069] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-17T08:40:50.352] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-17T08:40:50.991] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-17T08:40:51.483] [ERROR] default - Error: Cannot find module './lib/mediaType'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at loadModule (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/negotiator/index.js:114:16)
+    at Negotiator.mediaTypes (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/negotiator/index.js:76:29)
+    at Accepts.type.Accepts.types (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/accepts/index.js:105:33)
+    at IncomingMessage.req.accepts (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/request.js:134:23)
+    at ServerResponse.res.format (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/response.js:664:11)
+    at ServerResponse.redirect (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/response.js:925:8)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/server.js:249:11
+    at Layer.handle [as handle_request] (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:317:13)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:275:10)
+[2019-04-17T08:40:53.968] [ERROR] default - BadRequestError: request aborted
+    at IncomingMessage.onAborted (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/raw-body/index.js:231:10)
+    at IncomingMessage.emit (events.js:189:13)
+    at abortIncoming (_http_server.js:449:9)
+    at socketOnClose (_http_server.js:442:3)
+    at Socket.emit (events.js:194:15)
+    at TCP._handle.close (net.js:597:12)
+[2019-04-17T08:40:56.479] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-17T08:42:01.100] [ERROR] default - BadRequestError: request aborted
+    at IncomingMessage.onAborted (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/raw-body/index.js:231:10)
+    at IncomingMessage.emit (events.js:189:13)
+    at abortIncoming (_http_server.js:449:9)
+    at socketOnClose (_http_server.js:442:3)
+    at Socket.emit (events.js:194:15)
+    at TCP._handle.close (net.js:597:12)
+[2019-04-17T08:44:40.222] [ERROR] default - Error: Cannot find module './lib/mediaType'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at loadModule (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/negotiator/index.js:114:16)
+    at Negotiator.mediaTypes (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/negotiator/index.js:76:29)
+    at Accepts.type.Accepts.types (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/accepts/index.js:105:33)
+    at IncomingMessage.req.accepts (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/request.js:134:23)
+    at ServerResponse.res.format (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/response.js:664:11)
+    at ServerResponse.redirect (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/response.js:925:8)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/server.js:249:11
+    at Layer.handle [as handle_request] (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:317:13)
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final/server/node_modules/express/lib/router/index.js:275:10)
+[2019-04-17T11:49:00.825] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp/widgets
+[2019-04-17T11:49:02.583] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp/themes
+[2019-04-17T11:49:02.900] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp3d/widgets
+[2019-04-17T11:49:03.385] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp3d/themes
+[2019-04-17T13:18:37.838] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp/widgets
+[2019-04-17T13:18:39.631] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp/themes
+[2019-04-17T13:18:39.980] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp3d/widgets
+[2019-04-17T13:18:40.517] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp3d/themes
+[2019-04-17T14:37:25.359] [INFO] default - redirect  /webappbuilder/stemapp/index.html?id=2 to /webappbuilder/apps/2
+[2019-04-17T15:09:18.715] [INFO] default - redirect  /webappbuilder/stemapp/index.html?id=2 to /webappbuilder/apps/2
+[2019-04-17T15:18:23.509] [INFO] default - redirect  /webappbuilder/stemapp/index.html?id=2 to /webappbuilder/apps/2
+[2019-04-17T15:18:50.877] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp/widgets
+[2019-04-17T15:18:52.676] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp/themes
+[2019-04-17T15:18:52.991] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp3d/widgets
+[2019-04-17T15:18:53.493] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp3d/themes
+[2019-04-17T16:20:22.933] [INFO] default - redirect  /webappbuilder/stemapp/index.html?id=2 to /webappbuilder/apps/2
+[2019-04-17T16:31:51.048] [INFO] default - redirect  /webappbuilder/stemapp/index.html?id=2 to /webappbuilder/apps/2
+[2019-04-17T17:03:20.252] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp/widgets
+[2019-04-17T17:03:22.026] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp/themes
+[2019-04-17T17:03:22.390] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp3d/widgets
+[2019-04-17T17:03:22.891] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp3d/themes
+[2019-04-17T17:04:03.791] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp/widgets
+[2019-04-17T17:04:05.655] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp/themes
+[2019-04-17T17:04:06.063] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp3d/widgets
+[2019-04-17T17:04:06.604] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v2/client/stemapp3d/themes
+[2019-04-17T17:04:13.656] [INFO] default - redirect  /webappbuilder/stemapp/index.html?id=2 to /webappbuilder/apps/2
+[2019-04-17T17:41:04.265] [INFO] default - No token is found, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-17T17:41:09.306] [INFO] default - No token is found, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-17T17:41:27.728] [INFO] default - No token is found, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-17T18:35:05.608] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v3/client/stemapp/widgets
+[2019-04-17T18:35:07.276] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v3/client/stemapp/themes
+[2019-04-17T18:35:07.595] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v3/client/stemapp3d/widgets
+[2019-04-17T18:35:08.063] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v3/client/stemapp3d/themes
+[2019-04-17T18:35:25.359] [INFO] default - redirect  /webappbuilder/stemapp/index.html?id=2 to /webappbuilder/apps/2
+[2019-04-18T08:56:41.068] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-18T08:56:50.859] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-18T08:58:02.156] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-18T16:14:19.225] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v4/client/stemapp/widgets
+[2019-04-18T16:14:20.937] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v4/client/stemapp/themes
+[2019-04-18T16:14:21.267] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v4/client/stemapp3d/widgets
+[2019-04-18T16:14:21.748] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v4/client/stemapp3d/themes
+[2019-04-18T16:14:56.772] [INFO] default - redirect  /webappbuilder/stemapp/index.html?id=2 to /webappbuilder/apps/2
+[2019-04-18T16:21:19.096] [INFO] default - redirect  /webappbuilder/stemapp/index.html?id=2 to /webappbuilder/apps/2
+[2019-04-18T17:57:35.419] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v4/client/stemapp/widgets
+[2019-04-18T17:57:37.305] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v4/client/stemapp/themes
+[2019-04-18T17:57:37.666] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v4/client/stemapp3d/widgets
+[2019-04-18T17:57:38.142] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS_worked_final_v4/client/stemapp3d/themes
+[2019-04-18T17:59:46.324] [INFO] default - redirect  /webappbuilder/stemapp/index.html?id=2 to /webappbuilder/apps/2
+[2019-04-19T10:14:54.841] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp/widgets
+[2019-04-19T10:14:56.539] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp/themes
+[2019-04-19T10:14:56.852] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp3d/widgets
+[2019-04-19T10:14:57.295] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp3d/themes
+[2019-04-19T10:15:07.697] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-19T10:17:19.740] [DEBUG] default - tcp protocol proxy error
+[2019-04-19T10:17:19.742] [DEBUG] default - on tcp proxy error
+[2019-04-19T10:22:49.356] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp/widgets
+[2019-04-19T10:22:51.082] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp/themes
+[2019-04-19T10:22:51.389] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp3d/widgets
+[2019-04-19T10:22:51.834] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp3d/themes
+[2019-04-19T10:23:18.289] [INFO] default - No token is found, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-19T10:24:12.726] [INFO] default - redirect  /webappbuilder/stemapp/index.html?id=2 to /webappbuilder/apps/2
+[2019-04-19T10:34:48.198] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp/widgets
+[2019-04-19T10:34:49.930] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp/themes
+[2019-04-19T10:34:50.270] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp3d/widgets
+[2019-04-19T10:34:50.718] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp3d/themes
+[2019-04-19T10:35:07.614] [INFO] default - redirect  /webappbuilder/stemapp/index.html?id=2 to /webappbuilder/apps/2
+[2019-04-19T10:39:48.059] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-19T10:39:48.887] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-19T10:40:51.856] [ERROR] default - Error: Unexpected end of multipart data
+    at /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/server/node_modules/dicer/lib/Dicer.js:62:28
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+[2019-04-19T10:41:01.222] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-19T10:41:01.899] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-19T10:41:02.575] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-19T10:41:04.858] [ERROR] default - BadRequestError: request aborted
+    at IncomingMessage.onAborted (/usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/server/node_modules/raw-body/index.js:231:10)
+    at IncomingMessage.emit (events.js:189:13)
+    at abortIncoming (_http_server.js:449:9)
+    at socketOnClose (_http_server.js:442:3)
+    at Socket.emit (events.js:194:15)
+    at TCP._handle.close (net.js:597:12)
+[2019-04-19T10:41:05.786] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-19T10:41:10.138] [INFO] default - No portal URL is set, redirect /webappbuilder/ to /webappbuilder/?action=setportalurl
+[2019-04-19T10:59:13.982] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp/widgets
+[2019-04-19T10:59:15.726] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp/themes
+[2019-04-19T10:59:16.042] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp3d/widgets
+[2019-04-19T10:59:16.503] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp3d/themes
+[2019-04-19T10:59:30.215] [INFO] default - redirect  /webappbuilder/stemapp/index.html?id=2 to /webappbuilder/apps/2
+[2019-04-22T14:54:45.397] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp/widgets
+[2019-04-22T14:54:47.054] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp/themes
+[2019-04-22T14:54:47.390] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp3d/widgets
+[2019-04-22T14:54:47.887] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS-now/client/stemapp3d/themes
+[2019-04-22T15:40:07.609] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/widgets
+[2019-04-22T15:40:09.304] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp/themes
+[2019-04-22T15:40:09.606] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/widgets
+[2019-04-22T15:40:10.018] [INFO] repo - Read repository items: /usr/local/google/home/zhayan/Desktop/WebAppBuilderForArcGIS/client/stemapp3d/themes
