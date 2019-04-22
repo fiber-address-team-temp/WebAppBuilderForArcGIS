@@ -2,15 +2,98 @@
 
   <div class="dummy-loader" data-dojo-attach-point="dummyLoader">Loading...</div>
 
-  <div> You have selected 
-  	<div id="selectionCt" data-dojo-attach-point="selectionCt">0</div>
-  	 uncurated address records to curate. Click on the curate button to start the curation process.
+  <div> Total uncurated address in the table is  <div id="recordCount" data-dojo-attach-point="recordCount">0</div>.
+  </div>
+  <div> You have selected <div id="selectedCount" data-dojo-attach-point="selectedCount">0</div>
+  	 uncurated address records to curate. Click on the below buttons to start the curation process.
   </div>
 
-  <div id="curateTooltip" data-dojo-attach-point="curateTooltip">(See the difference between two curation options)</div>
+  <div id="curateTooltip" data-dojo-attach-point="curateTooltip">(See the detail of curation option)</div>
 
-  <button id="curateBtn" data-dojo-attach-point="curateBtn" class="btn btn-primary disabled">Curate</button>
-  <button id="curateNoCopyBtn" data-dojo-attach-point="curateNoCopyBtn" class="btn btn-primary disabled">Curate without Copying</button>
+  <div id="gridDiv" data-dojo-attach-point="gridDiv"></div>
+
+  <button id="curateBtn" data-dojo-attach-point="createBtn" class="btn btn-primary disabled">Curate Create</button>
+  <button id="curateBtn" data-dojo-attach-point="updateBtn" class="btn btn-primary disabled">Curate Update</button>
+  <button id="curateBtn" data-dojo-attach-point="deleteBtn" class="btn btn-primary disabled">Curate Delete</button>
+
+  <table>
+    <tr class="spaceUnder">
+      <td>
+        <label for="dtb">Global Id</label>
+      </td>
+      <td>
+        <!-- <input data-dojo-type="dijit/form/TextBox" id="globalId" data-dojo-props="intermediateChanges:true"/><br> -->
+        <div data-dojo-attach-point="globalIdContainer"></div>
+      </td>
+    </tr>
+    <tr class="spaceUnder">
+      <td>
+        <label for="dtb">Address Type</label>
+      </td>
+      <td>
+        <div data-dojo-attach-point="addressTypeContainer"></div>
+      </td>
+    </tr>
+    <tr class="spaceUnder">
+      <td>
+        <label for="dtb">City</label>
+      </td>
+      <td>
+        <!-- <input data-dojo-type="dijit/form/TextBox" id="city" /><br> -->
+        <div data-dojo-attach-point="cityContainer"></div>
+      </td>
+    </tr>
+    <tr class="spaceUnder">
+      <td>
+        <label for="dtb">State</label>
+      </td>
+      <td>
+        <!-- <input data-dojo-type="dijit/form/TextBox" id="state" /><br> -->
+        <div data-dojo-attach-point="stateContainer"></div>
+      </td>
+    </tr>
+    <tr class="spaceUnder">
+      <td>
+        <label for="dtb">Latitude</label>
+      </td>
+      <td>
+        <!-- <input data-dojo-type="dijit/form/TextBox" id="latitude" /><br> -->
+        <div data-dojo-attach-point="latitudeContainer"></div>
+      </td>
+    </tr>
+    <tr class="spaceUnder">
+      <td>
+        <label for="dtb">longitude</label>
+      </td>
+      <td>
+        <!-- <input data-dojo-type="dijit/form/TextBox" id="longitude" /><br> -->
+        <div data-dojo-attach-point="longitudeContainer"></div>
+      </td>
+    </tr>
+    <tr class="spaceUnder">
+      <td>
+        <label for="dtb">Physical Address Status</label>
+      </td>
+      <td>
+        <div data-dojo-attach-point="physicalAddressStatusContainer"></div>
+      </td>
+    </tr>
+    <tr class="spaceUnder">
+      <td>
+        <label for="dtb">Zip Code</label>
+      </td>
+      <td>
+        <!-- <input data-dojo-type="dijit/form/TextBox" id="zipCode" /><br> -->
+        <div data-dojo-attach-point="zipCodeContainer"></div>
+      </td>
+    </tr>
+    <tr class="spaceUnder">
+      <td>
+        <button id="curateBtn" data-dojo-attach-point="addAddressBtn" class="btn btn-primary">Add Address To Table</button>
+        <button id="curateBtn" data-dojo-attach-point="clearBtn" class="btn btn-primary">Clear Table</button><br>
+      </td>
+    </tr>
+  </table>
 
   <div class="transaction" data-dojo-attach-point="transactionCont">
     <div data-dojo-attach-point="transactionPreview"></div>
@@ -31,7 +114,7 @@
       <div class="transaction-data" data-dojo-attach-point="transactionFailureCt">0</div> address records failed to be curated.
       <div class="transaction-msg" data-dojo-attach-point="transactionFailureMsg"></div>
     </div>
-  	<div class="alert alert-danger transaction-msg hidden" data-dojo-attach-point="transactionError">Your selected address records failed to be curated. 
+  	<div class="alert alert-danger transaction-msg hidden" data-dojo-attach-point="transactionError">Your selected address records failed to be curated.
       <div class="transaction-data" data-dojo-attach-point="transactionErrorMsg">(ERR_MESSAGE)</div>
     </div>
   </div>

@@ -1,9 +1,10 @@
 define([
     'dojo/on',
-    'dojo/_base/declare', 
+    'dojo/_base/declare',
     'dojo/_base/lang',
     'dojo/_base/array',
     'dojo/dom-class',
+    'dojo/json',
     'dojo/request',
     'esri/request',
     'esri/graphic',
@@ -17,13 +18,30 @@ define([
     "esri/tasks/QueryTask",
     'esri/tasks/Geoprocessor',
     'dijit/Tooltip',
+    "dojox/grid/DataGrid",
+    "dojox/grid/cells",
+    "dojox/grid/cells/dijit",
+    "dojo/store/Memory",
+    "dojo/data/ObjectStore",
+    "dojo/date/locale",
+    "dojo/currency",
+    "dijit/form/DateTextBox",
+    "dijit/form/TextBox",
+    "dijit/form/HorizontalSlider",
+    'dojo/data/ItemFileWriteStore',
+    'dojox/uuid/generateRandomUuid',
+    'dijit/form/Select',
+    "dijit/form/TextBox",
+    "dijit/registry",
+    "dojo/number",
     ],
 function(
-    on, 
+    on,
     declare,
-    lang, 
+    lang,
     array,
     domClass,
+    json,
     request,
     esriRequest,
     Graphic,
@@ -35,6 +53,22 @@ function(
     QueryTask,
     Geoprocessor,
     Tooltip,
+    DataGrid,
+    cells,
+    cellsDijit,
+    Memory,
+    ObjectStore,
+    locale,
+    currency,
+    DateTextBox,
+    TextBox,
+    HorizontalSlider,
+    ItemFileWriteStore,
+    generateRandomUuid,
+    Select,
+    TextBox,
+    registry,
+    num
 ) {
   const ERROR_LAYER_CONFIG = "Failed to configure Address Layer or Uncurated Address Layer. Please contact app admin.";
   const ERROR_GPSERVICE = "Geoprocessing service failed. Please contact app admin."
@@ -47,110 +81,423 @@ function(
     addressLayer: null,
     uncuratedLayer: null,
     curateGpUrl: null,
-    curateNoCopyGpUrl: null,
 
     selected: [], // {objectId, fasId} pairs
 
+    grid: null,
+    itemsAlreadyExist: [],
+    id: 0,
+    store: new ItemFileWriteStore({data: {identifier: "GLOBALID", items: []}}),
+
+    gridLayout: [[
+          {name: 'GLOBALID', field: 'GLOBALID', editable: false, width: 20},
+          {
+              name: 'ADDRESSTYPE',
+              field: 'ADDRESSTYPE',
+              editable: true,
+              width: 15,
+              type: cells.Select,
+              options: ["ADDRESS_TYPE_SFU",
+                        "ADDRESS_TYPE_TLC",
+                        "ADDRESS_TYPE_NYU"]
+          },
+          {name: 'CITY', field: 'CITY', width: 10, editable: true},
+          {name: 'STATE', field: 'STATE', width: 10, editable: true},
+          {name: 'LATITUDE', field: 'LATITUDE', width: 10, editable: true},
+          {name: 'LONGITUDE', field: 'LONGITUDE', width: 10, editable: true},
+          {name: 'ZIPCODE', field: 'ZIPCODE', width: 10, editable: true},
+          {
+              name: 'PHYSICAL_ADDRESS_STATUS',
+              styles: 'text-align: center;',
+              field: 'PHYSICAL_ADDRESS_STATUS',
+              width: 15,
+              editable: true,
+              type: cells.Select,
+              options: ["PHYSICAL_STATUS_CURATE"]
+          }
+        ]],
+    /*
+    gridLayout: [{
+        defaultCell: {editable: true, type: cells._Widget, styles: 'text-align: right;'},
+        cells: [
+            {name: 'Address Id', field: 'id', editable: false , width: 15},
+            {
+                name: 'Fiber Market', styles: 'text-align: center;', field: 'fiber_market', width: 10,
+                type: cells.Select,
+                options: ["FIBER_MARKET_ATL", "FIBER_MARKET_AUG", "FIBER_MARKET_NYU"]
+            },
+            {name: 'Street', field: 'street', width: 10},
+            {name: 'Unit Number', field: 'unit_number', width: 10},
+            {name: 'City', field: 'city', width: 10},
+            {name: 'State', field: 'state', width: 10},
+            {name: 'Zip Code', field: 'zip_code', width: 10},
+            {
+                name: 'Curation Reason', styles: 'text-align: center;', field: 'curation_reason', width: 10,
+                type: cells.Select,
+                options: ["CURATE_REASON_INVALID", "CURATE_REASON_ACCURACY", "CURATE_REASON_OUT_OF_MARKET", "CURATE_REASON_BAD_FORMAT"]
+            }
+        ]
+    }],
+
+    data: [
+        {
+            id: "{8476DCFB-551C-678D-E053-0334300AF2FA}",
+            fiber_market: "FIBER_MARKET_ATL",
+            street: "1600 Amphitheatre Parkway",
+            unit_number: "1600",
+            city: 'Mountain View',
+            state: "CA",
+            zip_code: "95014",
+            curation_reason: "CURATE_REASON_INVALID",
+        },
+        {
+            id: "{8476DCFB-551C-678D-E053-03343WESDWE}",
+            fiber_market: "FIBER_MARKET_AUG",
+            street: "1965 Woody Court",
+            unit_number: "1878",
+            city: 'San Jose',
+            state: "CA",
+            zip_code: "95134",
+            curation_reason: "CURATE_REASON_ACCURACY",
+        },
+        {
+            id: "{8476DCFB-551C-678D-EWEF3-03343WESDWE}",
+            fiber_market: "FIBER_MARKET_NYU",
+            street: "37234 Spruce Ter",
+            unit_number: "8853",
+            city: 'Fremont',
+            state: "CA",
+            zip_code: "94536",
+            curation_reason: "CURATE_REASON_ACCURACY",
+        },
+        {
+            id: "{8476DCFB-551C-678D-EWEF3-03343WESDWE}",
+            fiber_market: "FIBER_MARKET_NYU",
+            street: "38233 Crown Line Dr",
+            unit_number: "2223",
+            city: 'San Jose',
+            state: "CA",
+            zip_code: "94536",
+            curation_reason: "CURATE_REASON_OUT_OF_MARKET",
+        },
+        {
+            id: "{8476DCFB-551C-678D-EWEF3-03343WETWEE}",
+            fiber_market: "FIBER_MARKET_NYU",
+            street: "1746 View Dr",
+            unit_number: "1746",
+            city: 'San Jose',
+            state: "CA",
+            zip_code: "95035",
+            curation_reason: "CURATE_REASON_OUT_OF_MARKET",
+        },
+
+    ],
+    */
     postCreate: function() {
-      this.inherited(arguments);
+        this.inherited(arguments);
 
-      this._setLayers().then(lang.hitch(this, function(){
-        this._updateSelection();
-        this.dummyLoader.classList.add("hidden");
-      }), lang.hitch(this, function(){
-        this.dummyLoader.innerHTML(ERROR_LAYER_CONFIG);
-      }));
+        this._setLayers().then(lang.hitch(this, function () {
+            //this._updateSelection();
+            this.dummyLoader.classList.add("hidden");
+        }), lang.hitch(this, function () {
+            this.dummyLoader.innerHTML(ERROR_LAYER_CONFIG);
+        }));
 
-      if(this.config.hasOwnProperty('curateGpUrl')){
-        this.curateGpUrl = this.config.curateGpUrl;
-        console.log('Curate GP URL: ' + this.curateGpUrl);
-      }
-      if(this.config.hasOwnProperty('curateNoCopyGpUrl')){
-        this.curateNoCopyGpUrl = this.config.curateNoCopyGpUrl;
-        console.log('Curate w/o Copy GP URL: ' + this.curateNoCopyGpUrl);
-      }
+        if (this.config.hasOwnProperty('curateGpUrl')) {
+            this.curateGpUrl = this.config.curateGpUrl;
+            console.log('Curate GP URL: ' + this.curateGpUrl);
+        }
 
-      this.own(on(this.curateBtn, "click", lang.hitch(this, this._onCurate)));
-      this.own(on(this.curateNoCopyBtn, "click", lang.hitch(this, this._curateWithoutCopy)));
+        this.own(on(this.createBtn, "click", lang.hitch(this, this._onCreate)));
+        this.own(on(this.updateBtn, "click", lang.hitch(this, this._onUpdate)));
+        this.own(on(this.deleteBtn, "click", lang.hitch(this, this._onDelete)));
+        this.own(on(this.clearBtn, "click", lang.hitch(this, this._clearItems)));
+        this.own(on(this.addAddressBtn, "click", lang.hitch(this, this._addAddressToStore)));
 
-      const TOOLTIP_CONTENT = "<div class='tooltipContent'>" + 
-      "<b>Curate</b> appends your selected uncurated addresses to the design address table.<br>" + 
-      "<b>Curate without Copying</b> only updates the curation status of selected uncurated addresses to be TRUE.</div>";
+        const TOOLTIP_CONTENT = "<div class='tooltipContent'>" +
+            "<b>Curate</b> appends your selected uncurated addresses to the design address table.</div>";
 
-      const curateTooltip = new Tooltip({
-        connectId: [this.curateTooltip],
-        label: TOOLTIP_CONTENT,
-        position: ["below"],
-        style: "width:400px"
-      });
-
+        const curateTooltip = new Tooltip({
+            connectId: [this.curateTooltip],
+            label: TOOLTIP_CONTENT,
+            position: ["below"],
+            style: "width:400px"
+        });
     },
 
+    startup: function () {
+      this._initGrid();
+      this._initInputBox();
+      this._initSelectBox();
+    },
+
+    onOpen: function () {
+        const panel = this.getPanel();
+        panel.position.width = 1300;
+        panel.position.height = 800;
+        panel.setPosition(panel.position);
+        panel.panelManager.normalizePanel(panel);
+        console.log('onOpen');
+    },
+
+    _initGrid() {
+      this.grid = new DataGrid({
+          store: this.store,
+          structure: this.gridLayout,
+          autoHeight: true,
+          autoWidth: true,
+      }, this.gridDiv);
+      this.grid.startup();
+      this.grid.on("SelectionChanged", lang.hitch(this, this._selectionChange));
+    },
+
+    // _initInputBox() {
+    //   const globalIdBox = registry.byId("globalId");
+    //   const cityBox = registry.byId("city");
+    //   const stateBox = registry.byId("state");
+    //   const latitudeBox = registry.byId("latitude");
+    //   const longitudeBox = registry.byId("longitude");
+    //   const zipCodeBox = registry.byId("zipcode");
+    //
+    //   this.own(on(globalIdBox, "change", function() {
+    //     console.log("value", globalIdBox.get("value") + " modified");
+    //   }));
+    //   /*
+    //   on(box0, "change", function(){
+    //     box1.set("value", box0.get("value") + " modified");
+    //   });
+    //   on(box0, "change", function(){
+    //     box1.set("value", box0.get("value") + " modified");
+    //   });
+    //   on(box0, "change", function(){
+    //     box1.set("value", box0.get("value") + " modified");
+    //   });
+    //   on(box0, "change", function(){
+    //     box1.set("value", box0.get("value") + " modified");
+    //   });
+    //   on(box0, "change", function(){
+    //     box1.set("value", box0.get("value") + " modified");
+    //   });
+    //   */
+    // },
+    _initInputBox() {
+      const globalIdBox = new TextBox({
+        id: "globalId",
+      }, this.globalIdContainer)
+      globalIdBox.startup()
+
+      const cityBox = new TextBox({
+        id: "city",
+      }, this.cityContainer)
+      cityBox.startup()
+
+      const stateBox = new TextBox({
+        id: "state",
+      }, this.stateContainer)
+      stateBox.startup()
+
+      const latitudeBox = new TextBox({
+        id: "latitude",
+      }, this.latitudeContainer)
+      latitudeBox.startup()
+
+      const longitudeBox = new TextBox({
+        id: "longitude",
+      }, this.longitudeContainer)
+      longitudeBox.startup()
+
+      const zipCodeBox = new TextBox({
+        id: "zipCode",
+      }, this.zipCodeContainer)
+      zipCodeBox.startup()
+      // globalIdBox.on("change", function(){
+      //   // console.log(globalIdBox.get("value"));
+      //   //this.newAddressItem = lang.mixin(this.newAddressItem, { GLOBALID: globalIdBox.get("value")})
+      //   // console.log(this.newAddressItem)
+      // })
+    },
+
+    _initSelectBox() {
+      const selectBox1 = new Select({
+        name: "addressType",
+        id: "addressType",
+        options: [
+            { label: "SFU", value: "Single Family Unit", selected: true},
+            { label: "MDU", value: "Mutiple Dex Unit" },
+        ]
+      }, this.addressTypeContainer)
+      selectBox1.startup()
+
+      const selectBox2 = new Select({
+          name: "physicalAddressStatus",
+          id: "physicalAddressStatus",
+          options: [
+              { label: "Curated", value: "Curated", selected: true},
+              { label: "Uncrated", value: "Uncurated" },
+          ]
+      }, this.physicalAddressStatusContainer)
+      selectBox2.startup()
+    },
+
+    _selectionChange(){
+      this.selectedCount.innerHTML = this.grid.selection.getSelected().length;
+    },
     _getSelectedAddresses(){
         if(this.uncuratedLayer !== null){
-            selected = [];
-            this.uncuratedLayer.getSelectedFeatures().forEach(function(graphic){
-                if(graphic.attributes.hasOwnProperty("OBJECTID") && graphic.attributes.hasOwnProperty("FASID")){
-                    selected.push({
-                        objectId: graphic.attributes["OBJECTID"],
-                        fasId: graphic.attributes["FASID"],
-                        streetAddress: graphic.attributes["STREETADDRESS"],
-                        unitNumber: graphic.attributes["UNITNUMBER"],
-                        zipcode: graphic.attributes["ZIPCODE"]
-                    });
-                }
-            });
-            this.selected = selected;
+          selected = [];
+          this.uncuratedLayer.getSelectedFeatures().forEach(function(graphic){
+              if(graphic.attributes.hasOwnProperty("OBJECTID") && graphic.attributes.hasOwnProperty("FASID")){
+                  selected.push({
+                      objectId: graphic.attributes["OBJECTID"],
+                      fasId: graphic.attributes["FASID"],
+                      streetAddress: graphic.attributes["STREETADDRESS"],
+                      unitNumber: graphic.attributes["UNITNUMBER"],
+                      zipcode: graphic.attributes["ZIPCODE"]
+                  });
+              }
+          });
+          this.selected = selected;
         }
-    },
-
-    // CURATE WITHOUT COPY - only update the CURATION_STATUS of selected uncurated addresses to be true
-
-    _curateWithoutCopy: function(){
-        this._showLoader();
-        this._hideTransactionMessage();
-        this._getSelectedAddresses();
-        this._runCurateNoCopyTask();
-    },
-
-    _runCurateNoCopyTask: function(){
-        if(this.curateNoCopyGpUrl !== null){
-            const gp = new Geoprocessor(this.curateNoCopyGpUrl);
-            let expression = "OBJECTID IN (";
-            this.selected.forEach(function(item){
-                expression += item.objectId + ",";
-            });
-            expression = expression.substring(0, expression.length-1) + ")";
-            const params = {
-                expression: expression
-            };
-            gp.submitJob(params, lang.hitch(this, this._curateNoCopyGPComplete), lang.hitch(this, this._gpJobStatus), lang.hitch(this, this._gpJobFailed)); 
-        } else {
-            console.log("Curate w/o Copy GP endpoint was not configured correctly. Please contact app admin.");
-        }
-    },
-
-    _curateNoCopyGPComplete: function(){
-        console.log("SUCCESSFUL CURATION!");
-        this.transactionSuccessCt.innerHTML = this.selected.length; 
-        this._printDetails(this.selected, this.transactionSuccessMsg);
-        domClass.remove(this.transactionSuccess, "hidden");
-        this._hideLoader();
     },
 
     // CURATE - selected uncurated addresses will be appended to the design address table
-
-    _onCurate: function(){
-        this._showLoader();
-        this._hideTransactionMessage();
-        if(this.addressLayer !== null){
-            this._getSelectedAddresses();
-            this._validateSelected();
-        } else {
-            this._showError(ERROR_LAYER_CONFIG);
-        }
+    _onUpdate: function(){
+        this._updateAddressesInSpanner(this._deleteSelectedItems())
     },
 
+    _onDelete: function(){
+        this._deleteAddressesInSpanner(this._deleteSelectedItems());
+    },
+
+    _addAddressToStore: function() {
+      const globalIdValue = registry.byId("globalId").get("value");
+      const cityValue = registry.byId("city").get("value");
+      const stateValue = registry.byId("state").get("value");
+      const latitudeValue = registry.byId("latitude").get("value");
+      const longitudeValue = registry.byId("longitude").get("value");
+      const zipCodeValue = registry.byId("zipCode").get("value");
+
+      const addressTypeValue = registry.byId("addressType").get("value");
+      const physicalAddressStatusValue = registry.byId("physicalAddressStatus").get("value");
+
+      const item = {
+        GLOBALID: globalIdValue,
+        CITY: cityValue,
+        STATE: stateValue,
+        LATITUDE: latitudeValue,
+        LONGITUDE: longitudeValue,
+        ZIPCODE: zipCodeValue,
+        ADDRESSTYPE: addressTypeValue,
+        PHYSICAL_ADDRESS_STATUS: physicalAddressStatusValue
+      };
+      this._addItem(globalIdValue, item);
+    },
+
+    _deleteSelectedItems: function() {
+      const items = this.grid.selection.getSelected();
+      const deleteCount = items.length
+      console.log(`Delete ${deleteCount} item(s) from store.`)
+      if(deleteCount){
+        for (let i = 0; i < items.length; i ++) {
+          const item = items[i];
+          if(item !== null){
+            /* Delete the item from the data store: */
+            this.store.deleteItem(item);
+          }
+        }
+        this.store.save()
+      }
+      this.recordCount.innerHTML -= deleteCount;
+      return items;
+    },
+
+    _clearItems: function() {
+      const allCount = this.grid.rowCount;
+      console.log(`Clear all ${allCount} item(s) from store.`)
+      // if(this.grid.rowCount){
+      //   for (let i = 0; i < this.grid.rowCount; i ++) {
+      //     var item = this.grid.getItem(i);
+      //     console.log(item)
+      //     this.store.deleteItem(item);
+      //   }
+      //   //this.store.save()
+      // }
+      this.store = new ItemFileWriteStore({data: {identifier: "GLOBALID", items: []}}),
+      this.grid.setStore(this.store);
+      // Reset record count
+      this.recordCount.innerHTML = 0;
+    },
+
+    _addItem: function(checkedKey, item){
+      this.store.fetch({query: { GLOBALID: checkedKey}, onComplete: lang.hitch(this, function(data){
+        if(data.length === 0){
+          this.store.newItem(item);
+          this.recordCount.innerHTML ++;
+        }
+      })})
+    },
+
+    _updateAddressesInSpanner: function(items){
+        console.log(items)
+        // this._convertStoreDataToApiData(items);
+        console.log("Send UPDATE request to one platform api.")
+        // Implements delete table in spanner
+        const getURL = "https://dog.ceo/api/breeds/image/random"
+        const postURL = "https://httpbin.org/post"
+        const postData = {name: "Yan Zhang", email: "zhayan@google.com"}
+        request.get(getURL, {
+            headers: {
+              "X-Requested-With": null
+            }
+        }).then(function(response){
+            console.log(`Test GET rest api: ${getURL}, Response: `, response);
+        });
+
+        request.post(postURL, {
+            data: postData,
+            headers: {
+              "X-Requested-With": null
+            }
+        }).then(function(response){
+            console.log(`Test POST rest api: ${postURL}, for POST data: ${json.stringify(postData)}, Response: `, response);
+        });
+    },
+
+    _deleteAddressesInSpanner: function(items){
+        console.log(items)
+        //this._convertStoreDataToApiData(items);
+        console.log("Send DELETE request to one platform api.")
+        // Implements delete table in spanner
+        const getURL = "https://dog.ceo/api/breeds/image/random"
+        const postURL = "https://httpbin.org/post"
+        const postData = {name: "Yan Zhang", email: "zhayan@google.com"}
+        request.get(getURL, {
+            headers: {
+              "X-Requested-With": null
+            }
+        }).then(function(response){
+            console.log(`Test GET rest api: ${getURL}, Response: `, response);
+        });
+
+        request.post(postURL, {
+            data: postData,
+            headers: {
+              "X-Requested-With": null
+            }
+        }).then(function(response){
+            console.log(`Test POST rest api: ${postURL}, for POST data: ${json.stringify(postData)}, Response: `, response);
+        });
+    },
+
+    // _convertStoreDataToApiData: function(items){
+    //     console.log("Convert dgrid store data to data posted for REST api.")
+    //     // This method is to convet store data to json data posted for REST apis.
+    //     // TODO: Implement it.
+    //
+    //     console.log(this.store)
+    // },
+
+    // CURATE - curate process
     _validateSelected: function(){
         // where1: FASID of uncurated addresses
         // where2: STREETADDRESS, UNITNUMBER, ZIPCODE of uncurated addresses
@@ -173,7 +520,7 @@ function(
             }
             else {
                 invalid.push(s.objectId);
-            } 
+            }
         });
         if(where1.length > len1){
             where1 = where1.substring(0, where1.length-1) + ")";
@@ -218,7 +565,7 @@ function(
                     let zipcode = f.attributes["ZIPCODE"];
                     if(fasId !== null && fasId.replace(/\s+/g, '').length !== 0){
                         where1 += "'" + fasId + "',"
-                    } 
+                    }
                     if(streetAddress !== null && zipcode !== null){
                         where2 += "(STREETADDRESS='" + streetAddress + "' AND ZIPCODE='" + zipcode + "'";
                         if(unitNumber !== null && unitNumber.replace(/\s+/g, '').length !== 0){
@@ -267,7 +614,7 @@ function(
                 this.transactionWarningCt.innerHTML = existed.length;
                 this.nonexisted = nonexisted;
                 this._runCurateGPTask();
-            }   
+            }
         }
     },
 
@@ -307,7 +654,7 @@ function(
         } else {
             console.log("There's NOTHING to curate.");
             this._hideLoader();
-        } 
+        }
     },
 
     _runCurateGPTask: function(){
@@ -321,7 +668,7 @@ function(
             const params = {
                 expression: expression
             };
-            gp.submitJob(params, lang.hitch(this, this._curateGPComplete), lang.hitch(this, this._gpJobStatus), lang.hitch(this, this._gpJobFailed)); 
+            gp.submitJob(params, lang.hitch(this, this._curateGPComplete), lang.hitch(this, this._gpJobStatus), lang.hitch(this, this._gpJobFailed));
         } else {
             console.log("Curate GP endpoint was not configured correctly. Please contact app admin.");
         }
@@ -343,7 +690,7 @@ function(
       this._showError(ERROR_GPSERVICE);
       this._hideLoader();
     },
- 
+
     _warnExistence: function(existed){
         this._printDetails(existed, this.transactionWarningMsg);
         domClass.remove(this.transactionWarning, 'hidden');
@@ -360,7 +707,7 @@ function(
                 if(this.config.hasOwnProperty("uncuratedLayerIndex")){
                     this.uncuratedLayer = layers[this.config.uncuratedLayerIndex].layerObject;
                     this.uncuratedLayer.on("selection-complete", lang.hitch(this, this._updateSelection));
-                    this.uncuratedLayer.on("selection-clear", lang.hitch(this, this._updateSelection));
+                    //this.uncuratedLayer.on("selection-clear", lang.hitch(this, this._updateSelection));
                 }
                 if(this.addressLayer !== null && this.uncuratedLayer !== null){
                     deferred.resolve();
@@ -371,23 +718,57 @@ function(
         } else {
             console.log("Cannot access map itemInfo.")
             deferred.reject();
-        } 
+        }
         return deferred.promise;
     },
 
     _updateSelection: function(){
-        var selected = this.uncuratedLayer.getSelectedFeatures();
-        if(this.selectionCt){
-            this.selectionCt.innerHTML = selected.length;
-        }
-        if(selected.length > 0){
-            domClass.remove(this.curateBtn, 'disabled');
-            domClass.remove(this.curateNoCopyBtn, 'disabled');
+        const selected = this.uncuratedLayer.getSelectedFeatures();
+        this._updateRecordCount();
+        if(!!selected.length){
+            for (let i = 0; i < selected.length; i ++) {
+              //data.items.push(lang.mixin({ id: i + 1 }, selected[i]))
+              const item = selected[i].attributes;
+              const key = item['GLOBALID']
+              // console.log(this.store.fetch({query: { GLOBALID: key}}))
+              // if(this.store.fetchItemByIdentity(item['GLOBALID'])){
+              //   this.store.newItem(item);
+              // }
+              this._addItem(key, item);
+              // this.store.save();
+              // console.log(this.store)
+              // console.log(this.store)
+              // //if(!this.itemsAlreadyExist.includes(item)) {
+              //   const newItem  = lang.mixin({ id: generateRandomUuid()}, item)
+              //   this.store.newItem(newItem);
+              //   this.itemsAlreadyExist.push(item);
+              // //}
+              // console.log(this.store)
+              // if(this.store.query(item).length === 0){
+                // Extend id column
+              // console.log(this.store)
+              // console.log(item)
+              // this.store.newItem(item);
+              // this.store.save();
+              // console.log(this.store)
+              //}
+            }
+            // let store = new ItemFileWriteStore({data: data});
+            // this.grid.setStore(store)
+            domClass.remove(this.createBtn, 'disabled');
+            domClass.remove(this.updateBtn, 'disabled');
+            domClass.remove(this.deleteBtn, 'disabled');
+            domClass.remove(this.clearBtn, 'disabled');
         } else {
-            domClass.add(this.curateBtn, 'disabled');
-            domClass.add(this.curateNoCopyBtn, 'disabled');
+            domClass.add(this.updateBtn, 'disabled');
             this._hideTransactionMessage();
         }
+    },
+
+    _updateRecordCount: function(){
+      if(this.recordCount){
+          this.recordCount.innerHTML = this.store._arrayOfAllItems.length;
+      }
     },
 
     // **** TRANSACTION RESULT ****
