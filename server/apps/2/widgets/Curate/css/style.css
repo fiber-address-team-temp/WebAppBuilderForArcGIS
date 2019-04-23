@@ -1,3 +1,7 @@
+#gridDiv {
+    height: 100%;
+}
+
 .curate h3 {
   font-size: 1.2em;
 }
@@ -6,9 +10,15 @@
 }
 /* add additional custom styles */
 
-#selectionCt {
+#recordCount {
 	display: inline;
 	color: green;
+	font-weight: bold;
+}
+
+#selectedCount {
+	display: inline;
+	color: red;
 	font-weight: bold;
 }
 

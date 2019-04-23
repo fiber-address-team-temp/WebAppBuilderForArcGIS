@@ -7,11 +7,11 @@ define([
 ],
 function(
   array,
-  declare, 
+  declare,
   lang,
   BaseWidgetSetting,
   LayerInfos
-  ) 
+  )
 {
 
   return declare([BaseWidgetSetting], {
@@ -22,33 +22,21 @@ function(
       // this.setConfig(this.config);
       if(this.map && this.map.itemInfo){
         LayerInfos.getInstance(this.map, this.map.itemInfo).then(lang.hitch(this, this._createLayerSelectionDropdown));
-      } 
+      }
 
     },
 
     setConfig: function(config){
       //To initialize the widget setting page depending on the widget config data
-      if(config.hasOwnProperty("addressLayerIndex")){
-        this.addressLayerDropdown.value = config.addressLayerIndex;
-      }
       if(config.hasOwnProperty("uncuratedLayerIndex")){
         this.uncuratedLayerDropdown.value = config.uncuratedLayerIndex;
-      }
-      if(config.hasOwnProperty("curateGpUrl")){
-        this.curateGpUrl.value = config.curateGpUrl;
-      }
-      if(config.hasOwnProperty("curateNoCopyGpUrl")){
-        this.curateNoCopyGpUrl.value = config.curateNoCopyGpUrl;
       }
     },
 
     getConfig: function(){
       //To return the config data input by the user
       return {
-        addressLayerIndex: this.addressLayerDropdown.value,
         uncuratedLayerIndex: this.uncuratedLayerDropdown.value,
-        curateGpUrl: this.curateGpUrl.value,
-        curateNoCopyGpUrl: this.curateNoCopyGpUrl.value,
       };
     },
 
@@ -60,7 +48,6 @@ function(
         option.innerHTML = layerInfo.title;
         option.setAttribute("layerid", layerid);
         option.setAttribute("value", index);
-        this.addressLayerDropdown.appendChild(option);
         var clone = option.cloneNode(true);
         this.uncuratedLayerDropdown.appendChild(clone);
       }));

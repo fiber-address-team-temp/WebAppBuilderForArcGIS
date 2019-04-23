@@ -1,6 +1,3 @@
 {
-	"addressLayerIndex": 0,
-	"uncuratedLayerIndex": 1,
-	"curateGpUrl":"https://arcadmin-fms-portal-dev.googlefiber.net/arcgis/rest/services/GPServices/Curate/GPServer",
-	"curateNoCopyGpUrl":"https://arcadmin-fms-portal-dev.googlefiber.net/arcgis/rest/services/GPServices/Curate_No_Copy/GPServer/Curate_No_Copy"
+	"uncuratedLayerIndex": 1
 }
