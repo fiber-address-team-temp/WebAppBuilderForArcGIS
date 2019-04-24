@@ -12,6 +12,8 @@ define([
     'jimu/BaseWidget',
     './jimu/LayerInfos/LayerInfos',
     './jimu/LayerStructure',
+    './jimu/dijit/TabContainer',
+    './jimu/utils',
     // 'jimu/LayerInfos/LayerInfos',
     // 'jimu/LayerStructure',
     "esri/tasks/query",
@@ -49,6 +51,8 @@ function(
     BaseWidget,
     LayerInfos,
     LayerStructure,
+    TabContainer,
+    jimuUtils,
     Query,
     QueryTask,
     Geoprocessor,
@@ -81,8 +85,9 @@ function(
     uncuratedLayer: null,
 
     selected: [],
-
+    selTab: null,
     grid: null,
+    tabContainer: null,
     itemsAlreadyExist: [],
     id: 0,
     store: new ItemFileWriteStore({data: {identifier: "GLOBALID", items: []}}),
@@ -194,24 +199,29 @@ function(
     postCreate: function() {
         this.inherited(arguments);
 
-        this._setLayers().then(lang.hitch(this, function () {
-            //this._updateSelection();
-            this.dummyLoader.classList.add("hidden");
-        }), lang.hitch(this, function () {
-            this.dummyLoader.innerHTML(ERROR_LAYER_CONFIG);
-        }));
+        this._setLayers();
 
-        this.own(on(this.createBtn, "click", lang.hitch(this, this._onCreate)));
-        this.own(on(this.updateBtn, "click", lang.hitch(this, this._onUpdate)));
-        this.own(on(this.deleteBtn, "click", lang.hitch(this, this._onDelete)));
-        this.own(on(this.clearBtn, "click", lang.hitch(this, this._clearItems)));
-        this.own(on(this.addAddressBtn, "click", lang.hitch(this, this._addAddressToStore)));
+        this.own(on(this.updateBtn, "click", lang.hitch(this, this._onCurationUpdate)));
+        this.own(on(this.deleteBtnUpdateTable, "click", lang.hitch(this, this._onCurationDelete)));
+        this.own(on(this.clearBtnUpdateTable, "click", lang.hitch(this, this._clearItems)));
+        this.own(on(this.createBtn, "click", lang.hitch(this, this._onCurationCreate)));
+        this.own(on(this.deleteBtnCreateTable, "click", lang.hitch(this, this._onCurationDelete)));
+        this.own(on(this.clearBtnCreateTable, "click", lang.hitch(this, this._clearItems)));
+        this.own(on(this.addAddressBtnUpdate, "click", lang.hitch(this, this._addAddressToStore)));
+        this.own(on(this.addAddressBtnCreate, "click", lang.hitch(this, this._addAddressToStore)));
 
         const TOOLTIP_CONTENT = "<div class='tooltipContent'>" +
             "<b>Curate</b> appends your selected uncurated addresses to the design address table.</div>";
 
         const curateTooltip = new Tooltip({
-            connectId: [this.curateTooltip],
+            connectId: [this.curateTooltipUpdate],
+            label: TOOLTIP_CONTENT,
+            position: ["below"],
+            style: "width:400px"
+        });
+
+        const curateTooltipCreate = new Tooltip({
+            connectId: [this.curateTooltipCreate],
             label: TOOLTIP_CONTENT,
             position: ["below"],
             style: "width:400px"
@@ -219,6 +229,7 @@ function(
     },
 
     startup: function () {
+      this._initTabContainer();
       this._initGrid();
       this._initInputBox();
       this._initSelectBox();
@@ -227,10 +238,40 @@ function(
     onOpen: function () {
         const panel = this.getPanel();
         panel.position.width = 1300;
-        panel.position.height = 800;
+        panel.position.height = 500;
         panel.setPosition(panel.position);
         panel.panelManager.normalizePanel(panel);
         console.log('onOpen');
+    },
+
+    _initTabContainer: function () {
+      let tabs = [];
+      tabs.push({
+        title: "Update Addresses Curation Table",
+        content: this.tabNode1
+      });
+      tabs.push({
+        title: "Create Addresses Curation Table",
+        content: this.tabNode2
+      });
+      tabs.push({
+        title: "Create Single Address Entry",
+        content: this.tabNode3
+      });
+      this.tabContainer = new TabContainer({
+        tabs: tabs,
+        selected: this.selTab
+      }, this.tabCurationTable);
+
+      this.tabContainer.startup();
+      this.own(on(this.tabContainer, "tabChanged", lang.hitch(this, function (title) {
+        if (title !== "Results") {
+          this.selTab = title;
+        }
+        // Refresh and render the store when tab change.
+        this.grid.render();
+      })));
+      // jimuUtils.setVerticalCenter(this.tabContainer.domNode);
     },
 
     _initGrid() {
@@ -239,7 +280,7 @@ function(
           structure: this.gridLayout,
           autoHeight: true,
           autoWidth: true,
-      }, this.gridDiv);
+      }, this.gridDivUpdateTable);
       this.grid.startup();
       this.grid.on("SelectionChanged", lang.hitch(this, this._selectionChange));
     },
@@ -299,32 +340,18 @@ function(
     },
 
     _selectionChange(){
-      this.selectedCount.innerHTML = this.grid.selection.getSelected().length;
+      this.selectedCountUpdate.innerHTML = this.grid.selection.getSelected().length;
     },
 
-    _getSelectedAddresses(){
-        if(this.uncuratedLayer !== null){
-          selected = [];
-          this.uncuratedLayer.getSelectedFeatures().forEach(function(graphic){
-              if(graphic.attributes.hasOwnProperty("OBJECTID") && graphic.attributes.hasOwnProperty("FASID")){
-                  selected.push({
-                      objectId: graphic.attributes["OBJECTID"],
-                      fasId: graphic.attributes["FASID"],
-                      streetAddress: graphic.attributes["STREETADDRESS"],
-                      unitNumber: graphic.attributes["UNITNUMBER"],
-                      zipcode: graphic.attributes["ZIPCODE"]
-                  });
-              }
-          });
-          this.selected = selected;
-        }
+    _onCurationCreate: function(){
+        this._createAddressesInSpanner(this._deleteSelectedItems())
     },
 
-    _onUpdate: function(){
+    _onCurationUpdate: function(){
         this._updateAddressesInSpanner(this._deleteSelectedItems())
     },
 
-    _onDelete: function(){
+    _onCurationDelete: function(){
         this._deleteAddressesInSpanner(this._deleteSelectedItems());
     },
 
@@ -365,7 +392,7 @@ function(
         }
         this.store.save()
       }
-      this.recordCount.innerHTML -= deleteCount;
+      this.recordCountUpdate.innerHTML -= deleteCount;
       return items;
     },
 
@@ -374,16 +401,40 @@ function(
       console.log(`Clear all ${allCount} item(s) from store.`)
       this.store = new ItemFileWriteStore({data: {identifier: "GLOBALID", items: []}}),
       this.grid.setStore(this.store);
-      this.recordCount.innerHTML = 0;
+      this.recordCountUpdate.innerHTML = 0;
     },
 
     _addItem: function(checkedKey, item){
       this.store.fetch({query: { GLOBALID: checkedKey}, onComplete: lang.hitch(this, function(data){
         if(data.length === 0){
           this.store.newItem(item);
-          this.recordCount.innerHTML ++;
+          this.recordCountUpdate.innerHTML ++;
         }
       })})
+      this.grid.render();
+    },
+
+    _createAddressesInSpanner: function(items){
+        console.log("Create items:" + items)
+        console.log("Send CREATE request to one platform api.")
+        const getURL = "https://dog.ceo/api/breeds/image/random"
+        const postURL = "https://httpbin.org/post"
+        const postData = {name: "Yan Zhang", email: "zhayan@google.com"}
+        request.get(getURL, {
+            headers: {
+              "X-Requested-With": null
+            }
+        }).then(function(response){
+            console.log(`Test GET rest api: ${getURL}, Response: `, response);
+        });
+        request.post(postURL, {
+            data: postData,
+            headers: {
+              "X-Requested-With": null
+            }
+        }).then(function(response){
+            console.log(`Test POST rest api: ${postURL}, for POST data: ${json.stringify(postData)}, Response: `, response);
+        });
     },
 
     _updateAddressesInSpanner: function(items){
@@ -437,6 +488,7 @@ function(
         if(this.map && this.map.itemInfo){
             LayerInfos.getInstance(this.map, this.map.itemInfo).then(lang.hitch(this, function(layerInfosObject){
                 let layers = layerInfosObject.getLayerInfoArray();
+                console.log(layers)
                 if(this.config.hasOwnProperty("uncuratedLayerIndex")){
                     this.uncuratedLayer = layers[this.config.uncuratedLayerIndex].layerObject;
                     this.uncuratedLayer.on("selection-complete", lang.hitch(this, this._updateSelection));
@@ -457,7 +509,7 @@ function(
 
     _updateSelection: function(){
         const selected = this.uncuratedLayer.getSelectedFeatures();
-        this._updateRecordCount();
+        this._updateRecordCountUpdate();
         if(!!selected.length){
             for (let i = 0; i < selected.length; i ++) {
               //data.items.push(lang.mixin({ id: i + 1 }, selected[i]))
@@ -467,17 +519,17 @@ function(
             }
             domClass.remove(this.createBtn, 'disabled');
             domClass.remove(this.updateBtn, 'disabled');
-            domClass.remove(this.deleteBtn, 'disabled');
-            domClass.remove(this.clearBtn, 'disabled');
+            domClass.remove(this.deleteBtnUpdateTable, 'disabled');
+            domClass.remove(this.clearBtnUpdateTable, 'disabled');
         } else {
             domClass.add(this.updateBtn, 'disabled');
             this._hideTransactionMessage();
         }
     },
 
-    _updateRecordCount: function(){
-      if(this.recordCount){
-          this.recordCount.innerHTML = this.store._arrayOfAllItems.length;
+    _updateRecordCountUpdate: function(){
+      if(this.recordCountUpdate){
+          this.recordCountUpdate.innerHTML = this.store._arrayOfAllItems.length;
       }
     },
 
