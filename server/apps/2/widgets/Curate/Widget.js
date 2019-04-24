@@ -14,8 +14,6 @@ define([
     './jimu/LayerStructure',
     './jimu/dijit/TabContainer',
     './jimu/utils',
-    // 'jimu/LayerInfos/LayerInfos',
-    // 'jimu/LayerStructure',
     "esri/tasks/query",
     "esri/tasks/QueryTask",
     'esri/tasks/Geoprocessor',
@@ -35,7 +33,6 @@ define([
     'dijit/form/Select',
     "dijit/form/TextBox",
     "dijit/registry",
-    "dojo/number",
     ],
 function(
     on,
@@ -71,8 +68,7 @@ function(
     generateRandomUuid,
     Select,
     TextBox,
-    registry,
-    num
+    registry
 ) {
   const ERROR_LAYER_CONFIG = "Failed to configure Address Layer or Uncurated Address Layer. Please contact app admin.";
   const ERROR_GPSERVICE = "Geoprocessing service failed. Please contact app admin."
@@ -86,11 +82,10 @@ function(
 
     selected: [],
     selTab: null,
-    grid: null,
     tabContainer: null,
-    itemsAlreadyExist: [],
-    id: 0,
-    store: new ItemFileWriteStore({data: {identifier: "GLOBALID", items: []}}),
+    updateTableGrid: null,
+    updateTableStore: new ItemFileWriteStore({data: {identifier: "GLOBALID", items: []}}),
+    GridName: Object.freeze({UPDATE: "UPDATE", CREATE:  "CREATE"}),
 
     gridLayout: [[
           {name: 'GLOBALID', field: 'GLOBALID', editable: false, width: 20},
@@ -119,96 +114,22 @@ function(
               options: ["PHYSICAL_STATUS_CURATE"]
           }
         ]],
-    /*
-    gridLayout: [{
-        defaultCell: {editable: true, type: cells._Widget, styles: 'text-align: right;'},
-        cells: [
-            {name: 'Address Id', field: 'id', editable: false , width: 15},
-            {
-                name: 'Fiber Market', styles: 'text-align: center;', field: 'fiber_market', width: 10,
-                type: cells.Select,
-                options: ["FIBER_MARKET_ATL", "FIBER_MARKET_AUG", "FIBER_MARKET_NYU"]
-            },
-            {name: 'Street', field: 'street', width: 10},
-            {name: 'Unit Number', field: 'unit_number', width: 10},
-            {name: 'City', field: 'city', width: 10},
-            {name: 'State', field: 'state', width: 10},
-            {name: 'Zip Code', field: 'zip_code', width: 10},
-            {
-                name: 'Curation Reason', styles: 'text-align: center;', field: 'curation_reason', width: 10,
-                type: cells.Select,
-                options: ["CURATE_REASON_INVALID", "CURATE_REASON_ACCURACY", "CURATE_REASON_OUT_OF_MARKET", "CURATE_REASON_BAD_FORMAT"]
-            }
-        ]
-    }],
 
-    data: [
-        {
-            id: "{8476DCFB-551C-678D-E053-0334300AF2FA}",
-            fiber_market: "FIBER_MARKET_ATL",
-            street: "1600 Amphitheatre Parkway",
-            unit_number: "1600",
-            city: 'Mountain View',
-            state: "CA",
-            zip_code: "95014",
-            curation_reason: "CURATE_REASON_INVALID",
-        },
-        {
-            id: "{8476DCFB-551C-678D-E053-03343WESDWE}",
-            fiber_market: "FIBER_MARKET_AUG",
-            street: "1965 Woody Court",
-            unit_number: "1878",
-            city: 'San Jose',
-            state: "CA",
-            zip_code: "95134",
-            curation_reason: "CURATE_REASON_ACCURACY",
-        },
-        {
-            id: "{8476DCFB-551C-678D-EWEF3-03343WESDWE}",
-            fiber_market: "FIBER_MARKET_NYU",
-            street: "37234 Spruce Ter",
-            unit_number: "8853",
-            city: 'Fremont',
-            state: "CA",
-            zip_code: "94536",
-            curation_reason: "CURATE_REASON_ACCURACY",
-        },
-        {
-            id: "{8476DCFB-551C-678D-EWEF3-03343WESDWE}",
-            fiber_market: "FIBER_MARKET_NYU",
-            street: "38233 Crown Line Dr",
-            unit_number: "2223",
-            city: 'San Jose',
-            state: "CA",
-            zip_code: "94536",
-            curation_reason: "CURATE_REASON_OUT_OF_MARKET",
-        },
-        {
-            id: "{8476DCFB-551C-678D-EWEF3-03343WETWEE}",
-            fiber_market: "FIBER_MARKET_NYU",
-            street: "1746 View Dr",
-            unit_number: "1746",
-            city: 'San Jose',
-            state: "CA",
-            zip_code: "95035",
-            curation_reason: "CURATE_REASON_OUT_OF_MARKET",
-        },
-
-    ],
-    */
     postCreate: function() {
         this.inherited(arguments);
 
         this._setLayers();
 
         this.own(on(this.updateBtn, "click", lang.hitch(this, this._onCurationUpdate)));
-        this.own(on(this.deleteBtnUpdateTable, "click", lang.hitch(this, this._onCurationDelete)));
-        this.own(on(this.clearBtnUpdateTable, "click", lang.hitch(this, this._clearItems)));
+        this.own(on(this.deleteBtnUpdateTable, "click", lang.hitch(this, this._onCurationDeleteInUpdateTable)));
+        this.own(on(this.clearBtnUpdateTable, "click", lang.hitch(this, this._clearItemsInUpdateTable)));
+
         this.own(on(this.createBtn, "click", lang.hitch(this, this._onCurationCreate)));
-        this.own(on(this.deleteBtnCreateTable, "click", lang.hitch(this, this._onCurationDelete)));
-        this.own(on(this.clearBtnCreateTable, "click", lang.hitch(this, this._clearItems)));
-        this.own(on(this.addAddressBtnUpdate, "click", lang.hitch(this, this._addAddressToStore)));
-        this.own(on(this.addAddressBtnCreate, "click", lang.hitch(this, this._addAddressToStore)));
+        this.own(on(this.deleteBtnCreateTable, "click", lang.hitch(this, this._onCurationDeleteInCreateTable)));
+        this.own(on(this.clearBtnCreateTable, "click", lang.hitch(this, this._clearItemsInCreateTable)));
+
+        this.own(on(this.addAddressBtnUpdate, "click", lang.hitch(this, this._addAddressToUpdateTableStore)));
+        this.own(on(this.addAddressBtnCreate, "click", lang.hitch(this, this._addAddressToCreateTableStore)));
 
         const TOOLTIP_CONTENT = "<div class='tooltipContent'>" +
             "<b>Curate</b> appends your selected uncurated addresses to the design address table.</div>";
@@ -238,10 +159,9 @@ function(
     onOpen: function () {
         const panel = this.getPanel();
         panel.position.width = 1300;
-        panel.position.height = 500;
+        panel.position.height = 415;
         panel.setPosition(panel.position);
         panel.panelManager.normalizePanel(panel);
-        console.log('onOpen');
     },
 
     _initTabContainer: function () {
@@ -269,20 +189,19 @@ function(
           this.selTab = title;
         }
         // Refresh and render the store when tab change.
-        this.grid.render();
+        this.updateTableGrid.render();
       })));
-      // jimuUtils.setVerticalCenter(this.tabContainer.domNode);
     },
 
     _initGrid() {
-      this.grid = new DataGrid({
-          store: this.store,
+      this.updateTableGrid = new DataGrid({
+          store: this.updateTableStore,
           structure: this.gridLayout,
           autoHeight: true,
           autoWidth: true,
       }, this.gridDivUpdateTable);
-      this.grid.startup();
-      this.grid.on("SelectionChanged", lang.hitch(this, this._selectionChange));
+      this.updateTableGrid.startup();
+      this.updateTableGrid.on("SelectionChanged", lang.hitch(this, this._selectionChange));
     },
 
     _initInputBox() {
@@ -340,22 +259,26 @@ function(
     },
 
     _selectionChange(){
-      this.selectedCountUpdate.innerHTML = this.grid.selection.getSelected().length;
-    },
-
-    _onCurationCreate: function(){
-        this._createAddressesInSpanner(this._deleteSelectedItems())
+      this.selectedCountInUpdateTable.innerHTML = this.updateTableGrid.selection.getSelected().length;
     },
 
     _onCurationUpdate: function(){
-        this._updateAddressesInSpanner(this._deleteSelectedItems())
+        this._updateAddressesInSpanner(this._deleteSelectedItemsInTable(this.GridName.UPDATE))
     },
 
-    _onCurationDelete: function(){
-        this._deleteAddressesInSpanner(this._deleteSelectedItems());
+    _onCurationCreate: function(){
+        this._createAddressesInSpanner(this._deleteSelectedItemsInTable(this.GridName.CREATE))
     },
 
-    _addAddressToStore: function() {
+    _onCurationDeleteInUpdateTable: function(){
+        this._deleteAddressesInSpanner(this._deleteSelectedItemsInTable(this.GridName.UPDATE));
+    },
+
+    _onCurationDeleteInCreateTable: function(){
+        this._deleteAddressesInSpanner(this._deleteSelectedItemsInTable(this.GridName.CREATE));
+    },
+
+    _fetchAddressItemInForm: function() {
       const globalIdValue = registry.byId("globalId").get("value");
       const cityValue = registry.byId("city").get("value");
       const stateValue = registry.byId("state").get("value");
@@ -376,42 +299,77 @@ function(
         ADDRESSTYPE: addressTypeValue,
         PHYSICAL_ADDRESS_STATUS: physicalAddressStatusValue
       };
-      this._addItem(globalIdValue, item);
+      return item
     },
 
-    _deleteSelectedItems: function() {
-      const items = this.grid.selection.getSelected();
-      const deleteCount = items.length
-      console.log(`Delete ${deleteCount} item(s) from store.`)
-      if(deleteCount){
-        for (let i = 0; i < items.length; i ++) {
-          const item = items[i];
-          if(item !== null){
-            this.store.deleteItem(item);
+    _addAddressToUpdateTableStore: function() {
+      this._addItem(this._fetchAddressItemInForm(), this.GridName.UPDATE);
+    },
+
+    _addAddressToCreateTableStore: function() {
+      this._addItem(this._fetchAddressItemInForm(), this.GridName.UPDATE);
+    },
+
+    _deleteSelectedItemsInTable: function(gridName) {
+      if(gridName === this.GridName.UPDATE) {
+        const items = this.updateTableGrid.selection.getSelected();
+        const updateTableDeletionCount = items.length
+        console.log(`Delete ${updateTableDeletionCount} item(s) from store.`)
+        if(updateTableDeletionCount){
+          for (let i = 0; i < items.length; i ++) {
+            const item = items[i];
+            if(item !== null){
+              this.updateTableStore.deleteItem(item);
+            }
           }
+          this.updateTableStore.save()
         }
-        this.store.save()
+        this.recordCountInUpdateTable.innerHTML -= updateTableDeletionCount;
+        if(this.recordCountInUpdateTable.innerHTML === "0") {
+          this._disableBtns(this.GridName.UPDATE);
+        }
+        return items;
+      } else if (gridName === this.GridName.CREATE) {
+        // TODO(XXX): Implement it.
       }
-      this.recordCountUpdate.innerHTML -= deleteCount;
-      return items;
+      return {};
     },
 
-    _clearItems: function() {
-      const allCount = this.grid.rowCount;
-      console.log(`Clear all ${allCount} item(s) from store.`)
-      this.store = new ItemFileWriteStore({data: {identifier: "GLOBALID", items: []}}),
-      this.grid.setStore(this.store);
-      this.recordCountUpdate.innerHTML = 0;
+    _clearItemsInUpdateTable: function() {
+      const updateTableAllCount = this.updateTableGrid.rowCount;
+      console.log(`Clear all ${updateTableAllCount} item(s) from store.`)
+      this.updateTableStore = new ItemFileWriteStore({data: {identifier: "GLOBALID", items: []}}),
+      this.updateTableGrid.setStore(this.updateTableStore);
+      this.recordCountInUpdateTable.innerHTML = 0;
+      this._disableBtns(this.GridName.UPDATE)
     },
 
-    _addItem: function(checkedKey, item){
-      this.store.fetch({query: { GLOBALID: checkedKey}, onComplete: lang.hitch(this, function(data){
-        if(data.length === 0){
-          this.store.newItem(item);
-          this.recordCountUpdate.innerHTML ++;
-        }
-      })})
-      this.grid.render();
+    _clearItemsInCreateTable: function() {
+      // TODO(XXX): Implement it.
+    },
+
+    _disableBtns: function(gridName) {
+      if(gridName === this.GridName.UPDATE){
+        domClass.add(this.updateBtn, 'disabled');
+        domClass.add(this.deleteBtnUpdateTable, 'disabled');
+        domClass.add(this.clearBtnUpdateTable, 'disabled');
+      } else {
+        domClass.add(this.createBtn, 'disabled');
+        domClass.add(this.deleteBtnCreateTable, 'disabled');
+        domClass.add(this.clearBtnCreateTable, 'disabled');
+      }
+    },
+
+    _addItem: function(item, gridName){
+      if(gridName === this.GridName.UPDATE) {
+        this.updateTableStore.fetch({query: { GLOBALID: item.GLOBALID}, onComplete: lang.hitch(this, function(data){
+          if(data.length === 0){
+            this.updateTableStore.newItem(item);
+            this.recordCountInUpdateTable.innerHTML ++;
+          }
+        })})
+        this.updateTableGrid.render();
+      }
     },
 
     _createAddressesInSpanner: function(items){
@@ -461,7 +419,6 @@ function(
     },
 
     _deleteAddressesInSpanner: function(items){
-        console.log(items)
         console.log("Send DELETE request to one platform api.")
         const getURL = "https://dog.ceo/api/breeds/image/random"
         const postURL = "https://httpbin.org/post"
@@ -492,7 +449,6 @@ function(
                 if(this.config.hasOwnProperty("uncuratedLayerIndex")){
                     this.uncuratedLayer = layers[this.config.uncuratedLayerIndex].layerObject;
                     this.uncuratedLayer.on("selection-complete", lang.hitch(this, this._updateSelection));
-                    //this.uncuratedLayer.on("selection-clear", lang.hitch(this, this._updateSelection));
                 }
                 if(this.uncuratedLayer !== null){
                     deferred.resolve();
@@ -509,13 +465,13 @@ function(
 
     _updateSelection: function(){
         const selected = this.uncuratedLayer.getSelectedFeatures();
-        this._updateRecordCountUpdate();
+        if(this.recordCountInUpdateTable){
+            this.recordCountInUpdateTable.innerHTML = this.updateTableStore._arrayOfAllItems.length;
+        }
         if(!!selected.length){
             for (let i = 0; i < selected.length; i ++) {
-              //data.items.push(lang.mixin({ id: i + 1 }, selected[i]))
               const item = selected[i].attributes;
-              const key = item['GLOBALID']
-              this._addItem(key, item);
+              this._addItem(item, this.GridName.UPDATE);
             }
             domClass.remove(this.createBtn, 'disabled');
             domClass.remove(this.updateBtn, 'disabled');
@@ -523,112 +479,7 @@ function(
             domClass.remove(this.clearBtnUpdateTable, 'disabled');
         } else {
             domClass.add(this.updateBtn, 'disabled');
-            this._hideTransactionMessage();
         }
     },
-
-    _updateRecordCountUpdate: function(){
-      if(this.recordCountUpdate){
-          this.recordCountUpdate.innerHTML = this.store._arrayOfAllItems.length;
-      }
-    },
-
-    _showTransactionPreview: function(){
-        var len = this.transaction.length > 3? 3: this.transaction.length;
-        for(var i=0; i< len; i++){
-            var div = document.createElement("div");
-            div.innerHTML = "FASID - "  + this.transaction[i].attributes.FASID;
-            this.transactionPreview.appendChild(div);
-        }
-        if(this.transaction.length > 3){
-            var div = document.createElement("div");
-            div.innerHTML = "And " + (this.transaction.length - 3) + " more..."
-            this.transactionPreview.appendChild(div);
-        }
-    },
-
-    _hideTransactionPreview: function(){
-        while(this.transactionPreview.firstChild){
-            this.transactionPreview.removeChild(this.transactionPreview.firstChild);
-        }
-    },
-
-    _showLoader: function(){
-        domClass.remove(this.transactionLoader, 'hidden');
-    },
-
-    _hideLoader: function(){
-        domClass.add(this.transactionLoader, 'hidden');
-    },
-
-    _hideTransactionMessage: function(){
-        domClass.add(this.transactionSuccess, 'hidden');
-        domClass.add(this.transactionWarning, 'hidden');
-        domClass.add(this.transactionError, 'hidden');
-    },
-
-    _printDetails: function(msgArray, dom){
-        while(dom.firstChild){
-            dom.removeChild(dom.firstChild);
-        }
-        var len = msgArray.length > 3? 3: msgArray.length;
-        for(var i=0; i< len; i++){
-            var div = document.createElement("div");
-            div.innerHTML = "OBJECTID: " + msgArray[i].objectId + ", ";
-            div.innerHTML += "FASID: "  + msgArray[i].fasId ;
-            dom.appendChild(div);
-        }
-        if(msgArray.length > 3){
-            var div = document.createElement("div");
-            div.innerHTML = "And " + (msgArray.length - 3) + " more..."
-            dom.appendChild(div);
-        }
-    },
-
-    _showError: function(err){
-        this.transactionErrorMsg.innerHTML = err == undefined? "ERR_MESSAGE" : err;
-        if(this.transactionError.classList.contains("hidden")){
-            this.transactionError.classList.remove("hidden");
-        }
-    },
-
-    // startup: function() {
-    //   this.inherited(arguments);
-    //   console.log('Curate::startup');
-    // },
-
-    // onOpen: function(){
-    //   console.log('Curate::onOpen');
-    // },
-
-    // onClose: function(){
-    //   console.log('Curate::onClose');
-    // },
-
-    // onMinimize: function(){
-    //   console.log('Curate::onMinimize');
-    // },
-
-    // onMaximize: function(){
-    //   console.log('Curate::onMaximize');
-    // },
-
-    // onSignIn: function(credential){
-    //   console.log('Curate::onSignIn', credential);
-    // },
-
-    // onSignOut: function(){
-    //   console.log('Curate::onSignOut');
-    // }
-
-    // onPositionChange: function(){
-    //   console.log('Curate::onPositionChange');
-    // },
-
-    // resize: function(){
-    //   console.log('Curate::resize');
-    // }
-
   });
-
 });
