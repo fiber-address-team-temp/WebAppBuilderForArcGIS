@@ -748,3 +748,125 @@ function(
   });
 
 });
+
+
+// reference Code
+<!-- Transaction message keep here for reference -->
+<!-- <div class="transaction" data-dojo-attach-point="transactionCont">
+  <div data-dojo-attach-point="transactionPreview"></div>
+  <div class="transaction-progress hidden" data-dojo-attach-point="transactionLoader">
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:100%"></div>
+    </div>
+  </div>
+  <div class="alert alert-success transaction-msg hidden" data-dojo-attach-point="transactionSuccess">
+    <div class="transaction-data" data-dojo-attach-point="transactionSuccessCt">0</div> address records have been curated successfully.
+    <div class="transaction-msg" data-dojo-attach-point="transactionSuccessMsg"></div>
+  </div>
+  <div class="alert alert-warning transaction-msg hidden" data-dojo-attach-point="transactionWarning">
+    <div class="transaction-data" data-dojo-attach-point="transactionWarningCt">0</div> address records have already existed in the Address Table.
+    <div class="transaction-msg" data-dojo-attach-point="transactionWarningMsg"></div>
+  </div>
+  <div class="alert alert-warning transaction-msg hidden" data-dojo-attach-point="transactionFailure">
+    <div class="transaction-data" data-dojo-attach-point="transactionFailureCt">0</div> address records failed to be curated.
+    <div class="transaction-msg" data-dojo-attach-point="transactionFailureMsg"></div>
+  </div>
+  <div class="alert alert-danger transaction-msg hidden" data-dojo-attach-point="transactionError">Your selected address records failed to be curated.
+    <div class="transaction-data" data-dojo-attach-point="transactionErrorMsg">(ERR_MESSAGE)</div>
+  </div>
+</div> -->
+
+// _hideTransactionMessage: function(){
+//     domClass.add(this.transactionSuccess, 'hidden');
+//     domClass.add(this.transactionWarning, 'hidden');
+//     domClass.add(this.transactionError, 'hidden');
+// },
+
+// _showError: function(err){
+//     this.transactionErrorMsg.innerHTML = err == undefined? "ERR_MESSAGE" : err;
+//     if(this.transactionError.classList.contains("hidden")){
+//         this.transactionError.classList.remove("hidden");
+//     }
+// },
+
+//data.items.push(lang.mixin({ id: i + 1 }, selected[i]))
+
+//this.uncuratedLayer.on("selection-clear", lang.hitch(this, this._updateSelection));
+
+/*
+gridLayout: [{
+    defaultCell: {editable: true, type: cells._Widget, styles: 'text-align: right;'},
+    cells: [
+        {name: 'Address Id', field: 'id', editable: false , width: 15},
+        {
+            name: 'Fiber Market', styles: 'text-align: center;', field: 'fiber_market', width: 10,
+            type: cells.Select,
+            options: ["FIBER_MARKET_ATL", "FIBER_MARKET_AUG", "FIBER_MARKET_NYU"]
+        },
+        {name: 'Street', field: 'street', width: 10},
+        {name: 'Unit Number', field: 'unit_number', width: 10},
+        {name: 'City', field: 'city', width: 10},
+        {name: 'State', field: 'state', width: 10},
+        {name: 'Zip Code', field: 'zip_code', width: 10},
+        {
+            name: 'Curation Reason', styles: 'text-align: center;', field: 'curation_reason', width: 10,
+            type: cells.Select,
+            options: ["CURATE_REASON_INVALID", "CURATE_REASON_ACCURACY", "CURATE_REASON_OUT_OF_MARKET", "CURATE_REASON_BAD_FORMAT"]
+        }
+    ]
+}],
+
+data: [
+    {
+        id: "{8476DCFB-551C-678D-E053-0334300AF2FA}",
+        fiber_market: "FIBER_MARKET_ATL",
+        street: "1600 Amphitheatre Parkway",
+        unit_number: "1600",
+        city: 'Mountain View',
+        state: "CA",
+        zip_code: "95014",
+        curation_reason: "CURATE_REASON_INVALID",
+    },
+    {
+        id: "{8476DCFB-551C-678D-E053-03343WESDWE}",
+        fiber_market: "FIBER_MARKET_AUG",
+        street: "1965 Woody Court",
+        unit_number: "1878",
+        city: 'San Jose',
+        state: "CA",
+        zip_code: "95134",
+        curation_reason: "CURATE_REASON_ACCURACY",
+    },
+    {
+        id: "{8476DCFB-551C-678D-EWEF3-03343WESDWE}",
+        fiber_market: "FIBER_MARKET_NYU",
+        street: "37234 Spruce Ter",
+        unit_number: "8853",
+        city: 'Fremont',
+        state: "CA",
+        zip_code: "94536",
+        curation_reason: "CURATE_REASON_ACCURACY",
+    },
+    {
+        id: "{8476DCFB-551C-678D-EWEF3-03343WESDWE}",
+        fiber_market: "FIBER_MARKET_NYU",
+        street: "38233 Crown Line Dr",
+        unit_number: "2223",
+        city: 'San Jose',
+        state: "CA",
+        zip_code: "94536",
+        curation_reason: "CURATE_REASON_OUT_OF_MARKET",
+    },
+    {
+        id: "{8476DCFB-551C-678D-EWEF3-03343WETWEE}",
+        fiber_market: "FIBER_MARKET_NYU",
+        street: "1746 View Dr",
+        unit_number: "1746",
+        city: 'San Jose',
+        state: "CA",
+        zip_code: "95035",
+        curation_reason: "CURATE_REASON_OUT_OF_MARKET",
+    },
+
+],
+*/
