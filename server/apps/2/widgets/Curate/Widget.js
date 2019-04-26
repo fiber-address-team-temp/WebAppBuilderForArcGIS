@@ -70,8 +70,6 @@ function(
     TextBox,
     registry
 ) {
-  const ERROR_LAYER_CONFIG = "Failed to configure Address Layer or Uncurated Address Layer. Please contact app admin.";
-  const ERROR_GPSERVICE = "Geoprocessing service failed. Please contact app admin."
 
   return declare([BaseWidget], {
 
@@ -167,11 +165,11 @@ function(
     _initTabContainer: function () {
       let tabs = [];
       tabs.push({
-        title: "Update Addresses Curation Table",
+        title: "Update Addresses",
         content: this.tabNode1
       });
       tabs.push({
-        title: "Create Addresses Curation Table",
+        title: "Create Addresses",
         content: this.tabNode2
       });
       tabs.push({
@@ -377,7 +375,7 @@ function(
         console.log("Send CREATE request to one platform api.")
         const getURL = "https://dog.ceo/api/breeds/image/random"
         const postURL = "https://httpbin.org/post"
-        const postData = {name: "Yan Zhang", email: "zhayan@google.com"}
+        const postData = {items: items}
         request.get(getURL, {
             headers: {
               "X-Requested-With": null
@@ -400,7 +398,7 @@ function(
         console.log("Send UPDATE request to one platform api.")
         const getURL = "https://dog.ceo/api/breeds/image/random"
         const postURL = "https://httpbin.org/post"
-        const postData = {name: "Yan Zhang", email: "zhayan@google.com"}
+        const postData = {items: items}
         request.get(getURL, {
             headers: {
               "X-Requested-With": null
@@ -422,7 +420,7 @@ function(
         console.log("Send DELETE request to one platform api.")
         const getURL = "https://dog.ceo/api/breeds/image/random"
         const postURL = "https://httpbin.org/post"
-        const postData = {name: "Yan Zhang", email: "zhayan@google.com"}
+        const postData = {items: items}
         request.get(getURL, {
             headers: {
               "X-Requested-With": null
