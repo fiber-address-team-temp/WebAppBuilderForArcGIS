@@ -62,10 +62,11 @@ function(
     selTab: null,
     tabContainer: null,
     updateTableGrid: null,
+    createTableGrid: null,
     updateTableStore: new ItemFileWriteStore({data: {identifier: "GLOBALID", items: []}}),
+    createTableStore: new ItemFileWriteStore({data: {identifier: "GLOBALID", items: []}}),
     GridName: Object.freeze({UPDATE: "UPDATE", CREATE:  "CREATE"}),
-
-    gridLayout: [[
+    gridLayoutUpdateTable: [[
           {name: 'GLOBALID', field: 'GLOBALID', editable: false, width: 20},
           {
               name: 'ADDRESSTYPE',
@@ -92,6 +93,7 @@ function(
               options: ["PHYSICAL_STATUS_CURATE"]
           }
         ]],
+    gridLayoutCreateTable: lang.clone(this.gridLayoutUpdateTable),
 
     postCreate() {
         this.inherited(arguments);
@@ -116,12 +118,12 @@ function(
 
         // Create Addresses Table.
         this.own(on(this.createBtn, "click", lang.hitch(this, function(){
-          if(!domClass.contains(this.createBtn, "disabled") && !!this.updateTableGrid.selection.getSelected().length){
+          if(!domClass.contains(this.createBtn, "disabled") && !!this.createTableGrid.selection.getSelected().length){
             this.createDialog.show();
           }
         })));
         this.own(on(this.deleteBtnCreateTable, "click", lang.hitch(this, function(){
-          if(!domClass.contains(this.deleteBtnCreateTable, "disabled") && !!this.updateTableGrid.selection.getSelected().length){
+          if(!domClass.contains(this.deleteBtnCreateTable, "disabled") && !!this.createTableGrid.selection.getSelected().length){
             this.deleteDialogTwo.show();
           }
         })));
@@ -184,7 +186,7 @@ function(
       })
       this.clearItemsDialog = new ConfirmDialog({
         title: "Clear Item(s) Confirmation Dialog",
-        content: "Are you sure to clear all selected item(s)?",
+        content: "Are you sure to clear all item(s) in the table?",
         style: "width: 300px",
         onExecute: lang.hitch(this, function(){
           this._clearItems(this.GridName.UPDATE);
@@ -195,7 +197,7 @@ function(
         content: "Are you sure to CURATE CREATE selected item(s)?",
         style: "width: 300px",
         onExecute: lang.hitch(this, function(){
-          this._updateAddressesInSpanner(this.updateTableGrid.selection.getSelected(), this.GridName.CREATE);
+          this._updateAddressesInSpanner(this.createTableGrid.selection.getSelected(), this.GridName.CREATE);
         })
       })
       this.deleteDialogTwo = new ConfirmDialog({
@@ -203,12 +205,12 @@ function(
         content: "Are you sure to CURATE DELETE selected item(s)?",
         style: "width: 300px",
         onExecute: lang.hitch(this, function(){
-          this._deleteAddressesInSpanner(this.updateTableGrid.selection.getSelected(), this.GridName.CREATE);
+          this._deleteAddressesInSpanner(this.createTableGrid.selection.getSelected(), this.GridName.CREATE);
         })
       })
       this.clearItemsDialogTwo = new ConfirmDialog({
         title: "Clear Item(s) Confirmation Dialog",
-        content: "Are you sure to clear all selected item(s)?",
+        content: "Are you sure to clear all item(s) in the table?",
         style: "width: 300px",
         onExecute: lang.hitch(this, function(){
           this._clearItems(this.GridName.CREATE);
@@ -250,18 +252,32 @@ function(
         }
         // Refresh and render the store when tab change.
         this.updateTableGrid.render();
+        this.createTableGrid.render();
       })));
     },
 
     _initGrid() {
       this.updateTableGrid = new DataGrid({
           store: this.updateTableStore,
-          structure: this.gridLayout,
+          structure: this.gridLayoutUpdateTable,
           autoHeight: true,
           autoWidth: true,
       }, this.gridDivUpdateTable);
       this.updateTableGrid.startup();
-      this.updateTableGrid.on("SelectionChanged", lang.hitch(this, this._selectionChange));
+      this.updateTableGrid.on("SelectionChanged", lang.hitch(this, function(){
+        this._selectionChange(this.GridName.UPDATE);
+      }));
+
+      this.createTableGrid = new DataGrid({
+          store: this.createTableStore,
+          structure: this.gridLayoutCreateTable,
+          autoHeight: true,
+          autoWidth: true,
+      }, this.gridDivCreateTable);
+      this.createTableGrid.startup();
+      this.createTableGrid.on("SelectionChanged", lang.hitch(this, function(){
+        this._selectionChange(this.GridName.CREATE);
+      }));
     },
 
     _initInputBox() {
@@ -318,8 +334,12 @@ function(
       selectBox2.startup();
     },
 
-    _selectionChange() {
-      this.selectedCountInUpdateTable.innerHTML = this.updateTableGrid.selection.getSelected().length;
+    _selectionChange(gridName) {
+      if(gridName === this.GridName.UPDATE){
+        this.selectedCountInUpdateTable.innerHTML = this.updateTableGrid.selection.getSelected().length;
+      } else {
+        this.selectedCountInCreateTable.innerHTML = this.createTableGrid.selection.getSelected().length;
+      }
     },
 
     _fetchAddressItemInForm() {
@@ -363,9 +383,22 @@ function(
         if(this.recordCountInUpdateTable.innerHTML === "0") {
           this._disableBtns(this.GridName.UPDATE);
         }
-        return items;
       } else {
-        // TODO(XXX): Implement it.
+        const createTableDeletionCount = items.length
+        console.log(`Delete ${createTableDeletionCount} item(s) from store.`)
+        if(createTableDeletionCount){
+          for (let i = 0; i < items.length; i ++) {
+            const item = items[i];
+            if(item !== null){
+              this.createTableStore.deleteItem(item);
+            }
+          }
+          this.createTableStore.save();
+        }
+        this.recordCountInCreateTable.innerHTML -= createTableDeletionCount;
+        if(this.recordCountInCreateTable.innerHTML === "0") {
+          this._disableBtns(this.GridName.CREATE);
+        }
       }
     },
 
@@ -378,7 +411,12 @@ function(
         this.recordCountInUpdateTable.innerHTML = 0;
         this._disableBtns(this.GridName.UPDATE)
       } else {
-        // TODO(XXX): Implement it.
+        const createTableAllCount = this.createTableGrid.rowCount;
+        console.log(`Clear all ${createTableAllCount} item(s) from store.`);
+        this.createTableStore = new ItemFileWriteStore({data: {identifier: "GLOBALID", items: []}}),
+        this.createTableGrid.setStore(this.createTableStore);
+        this.recordCountInCreateTable.innerHTML = 0;
+        this._disableBtns(this.GridName.CREATE)
       }
     },
 
@@ -403,6 +441,14 @@ function(
           }
         })})
         this.updateTableGrid.render();
+      } else {
+        this.createTableStore.fetch({query: { GLOBALID: item.GLOBALID}, onComplete: lang.hitch(this, function(data){
+          if(data.length === 0){
+            this.createTableStore.newItem(item);
+            this.recordCountInCreateTable.innerHTML ++;
+          }
+        })})
+        this.createTableGrid.render();
       }
     },
 
@@ -483,7 +529,8 @@ function(
                 console.log(layers);
                 if(this.config.hasOwnProperty("uncuratedLayerIndex")){
                     this.uncuratedLayer = layers[this.config.uncuratedLayerIndex].layerObject;
-                    this.uncuratedLayer.on("selection-complete", lang.hitch(this, this._updateSelection));
+                    this.uncuratedLayer.on("selection-complete", lang.hitch(this, this._updateSelectionUpdateTable));
+                    this.uncuratedLayer.on("selection-complete", lang.hitch(this, this._updateSelectionCreateTable));
                 }
                 if(this.uncuratedLayer !== null){
                     deferred.resolve();
@@ -498,7 +545,7 @@ function(
         return deferred.promise;
     },
 
-    _updateSelection() {
+    _updateSelectionUpdateTable() {
         const selected = this.uncuratedLayer.getSelectedFeatures();
         if(this.recordCountInUpdateTable){
             this.recordCountInUpdateTable.innerHTML = this.updateTableStore._arrayOfAllItems.length;
@@ -508,12 +555,29 @@ function(
               const item = selected[i].attributes;
               this._addItem(item, this.GridName.UPDATE);
             }
-            domClass.remove(this.createBtn, 'disabled');
             domClass.remove(this.updateBtn, 'disabled');
             domClass.remove(this.deleteBtnUpdateTable, 'disabled');
             domClass.remove(this.clearBtnUpdateTable, 'disabled');
         } else {
             domClass.add(this.updateBtn, 'disabled');
+        }
+    },
+
+    _updateSelectionCreateTable() {
+        const selected = this.uncuratedLayer.getSelectedFeatures();
+        if(this.recordCountInCreateTable){
+            this.recordCountInCreateTable.innerHTML = this.createTableStore._arrayOfAllItems.length;
+        }
+        if(!!selected.length){
+            for (let i = 0; i < selected.length; i ++) {
+              const item = selected[i].attributes;
+              this._addItem(item, this.GridName.CREATE);
+            }
+            domClass.remove(this.createBtn, 'disabled');
+            domClass.remove(this.deleteBtnCreateTable, 'disabled');
+            domClass.remove(this.clearBtnCreateTable, 'disabled');
+        } else {
+            domClass.add(this.createBtn, 'disabled');
         }
     },
   });
