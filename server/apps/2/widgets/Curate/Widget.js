@@ -3,6 +3,7 @@ define([
     'dojo/_base/declare',
     'dojo/_base/lang',
     'dojo/dom-class',
+    "dojo/dom-attr",
     'dojo/json',
     'dojo/request',
     'dojo/Deferred',
@@ -20,6 +21,8 @@ define([
     'dojo/data/ItemFileWriteStore',
     'dijit/form/Select',
     "dijit/form/TextBox",
+    "dijit/form/Button",
+    "dijit/ConfirmDialog",
     "dijit/registry",
     ],
 function(
@@ -27,6 +30,7 @@ function(
     declare,
     lang,
     domClass,
+    domAttr,
     json,
     request,
     Deferred,
@@ -44,6 +48,8 @@ function(
     ItemFileWriteStore,
     Select,
     TextBox,
+    Button,
+    ConfirmDialog,
     registry
 ) {
 
@@ -95,24 +101,36 @@ function(
 
         // Update Addresses Table.
         this.own(on(this.updateBtn, "click", lang.hitch(this, function(){
-          this._updateAddressesInSpanner(this.updateTableGrid.selection.getSelected(), this.GridName.UPDATE);
+          if(!domClass.contains(this.updateBtn, "disabled") && !!this.updateTableGrid.selection.getSelected().length){
+            this.updateDialog.show();
+          }
         })));
         this.own(on(this.deleteBtnUpdateTable, "click", lang.hitch(this, function(){
-          this._deleteAddressesInSpanner(this.updateTableGrid.selection.getSelected(), this.GridName.UPDATE);
+          if(!domClass.contains(this.deleteBtnUpdateTable, "disabled") && !!this.updateTableGrid.selection.getSelected().length){
+            this.deleteDialog.show();
+          }
         })));
         this.own(on(this.clearBtnUpdateTable, "click", lang.hitch(this, function(){
-          this._clearItems(this.GridName.UPDATE);
+          if(!domClass.contains(this.clearBtnUpdateTable, "disabled")){
+            this.clearItemsDialog.show();
+          }
         })));
 
         // Create Addresses Table.
         this.own(on(this.createBtn, "click", lang.hitch(this, function(){
-          this._createAddressesInSpanner(this.updateTableGrid.selection.getSelected(), this.GridName.CREATE);
+          if(!domClass.contains(this.createBtn, "disabled") && !!this.updateTableGrid.selection.getSelected().length){
+            this.createDialog.show();
+          }
         })));
         this.own(on(this.deleteBtnCreateTable, "click", lang.hitch(this, function(){
-          this._deleteAddressesInSpanner(this.updateTableGrid.selection.getSelected(), this.GridName.CREATE);
+          if(!domClass.contains(this.deleteBtnCreateTable, "disabled") && !!this.updateTableGrid.selection.getSelected().length){
+            this.deleteDialogTwo.show();
+          }
         })));
         this.own(on(this.clearBtnCreateTable, "click", lang.hitch(this, function(){
-          this._clearItems(this.GridName.CREATE);
+          if(!domClass.contains(this.clearBtnCreateTable, "disabled")){
+            this.clearItemsDialogTwo.show();
+          }
         })));
 
         // Create Single Address Entry.
@@ -142,10 +160,62 @@ function(
     },
 
     startup() {
+      this._initDialog();
       this._initTabContainer();
       this._initGrid();
       this._initInputBox();
       this._initSelectBox();
+    },
+
+    _initDialog() {
+      this.updateDialog = new ConfirmDialog({
+        title: "Curate Update Confirmation Dialog",
+        content: "Are you sure to CURATE UPDATE selected item(s)?",
+        style: "width: 300px",
+        onExecute: lang.hitch(this, function(){
+          this._updateAddressesInSpanner(this.updateTableGrid.selection.getSelected(), this.GridName.UPDATE);
+        })
+      })
+      this.deleteDialog = new ConfirmDialog({
+        title: "Curate Delete Confirmation Dialog",
+        content: "Are you sure to CURATE DELETE selected item(s)?",
+        style: "width: 300px",
+        onExecute: lang.hitch(this, function(){
+          this._deleteAddressesInSpanner(this.updateTableGrid.selection.getSelected(), this.GridName.UPDATE);
+        })
+      })
+      this.clearItemsDialog = new ConfirmDialog({
+        title: "Clear Item(s) Confirmation Dialog",
+        content: "Are you sure to clear all selected item(s)?",
+        style: "width: 300px",
+        onExecute: lang.hitch(this, function(){
+          this._clearItems(this.GridName.UPDATE);
+        })
+      })
+      this.createDialog = new ConfirmDialog({
+        title: "Curate Create Confirmation Dialog",
+        content: "Are you sure to CURATE CREATE selected item(s)?",
+        style: "width: 300px",
+        onExecute: lang.hitch(this, function(){
+          this._updateAddressesInSpanner(this.updateTableGrid.selection.getSelected(), this.GridName.CREATE);
+        })
+      })
+      this.deleteDialogTwo = new ConfirmDialog({
+        title: "Curate Delete Confirmation Dialog",
+        content: "Are you sure to CURATE DELETE selected item(s)?",
+        style: "width: 300px",
+        onExecute: lang.hitch(this, function(){
+          this._deleteAddressesInSpanner(this.updateTableGrid.selection.getSelected(), this.GridName.CREATE);
+        })
+      })
+      this.clearItemsDialogTwo = new ConfirmDialog({
+        title: "Clear Item(s) Confirmation Dialog",
+        content: "Are you sure to clear all selected item(s)?",
+        style: "width: 300px",
+        onExecute: lang.hitch(this, function(){
+          this._clearItems(this.GridName.CREATE);
+        })
+      })
     },
 
     onOpen() {
