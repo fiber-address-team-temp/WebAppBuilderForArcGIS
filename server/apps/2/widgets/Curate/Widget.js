@@ -3,7 +3,6 @@ define([
     'dojo/_base/declare',
     'dojo/_base/lang',
     'dojo/dom-class',
-    "dojo/dom-attr",
     'dojo/json',
     'dojo/request',
     'dojo/Deferred',
@@ -30,7 +29,6 @@ function(
     declare,
     lang,
     domClass,
-    domAttr,
     json,
     request,
     Deferred,
@@ -160,14 +158,14 @@ function(
     },
 
     startup() {
-      this._initDialog();
+      this._initConfirmationDialog();
       this._initTabContainer();
       this._initGrid();
       this._initInputBox();
       this._initSelectBox();
     },
 
-    _initDialog() {
+    _initConfirmationDialog() {
       this.updateDialog = new ConfirmDialog({
         title: "Curate Update Confirmation Dialog",
         content: "Are you sure to CURATE UPDATE selected item(s)?",
