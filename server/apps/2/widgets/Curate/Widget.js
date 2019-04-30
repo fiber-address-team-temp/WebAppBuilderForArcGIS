@@ -2,34 +2,22 @@ define([
     'dojo/on',
     'dojo/_base/declare',
     'dojo/_base/lang',
-    'dojo/_base/array',
     'dojo/dom-class',
     'dojo/json',
     'dojo/request',
-    'esri/request',
-    'esri/graphic',
     'dojo/Deferred',
     'jimu/BaseWidget',
     './jimu/LayerInfos/LayerInfos',
-    './jimu/LayerStructure',
     './jimu/dijit/TabContainer',
-    './jimu/utils',
-    "esri/tasks/query",
-    "esri/tasks/QueryTask",
-    'esri/tasks/Geoprocessor',
     'dijit/Tooltip',
     "dojox/grid/DataGrid",
     "dojox/grid/cells",
     "dojox/grid/cells/dijit",
     "dojo/store/Memory",
     "dojo/data/ObjectStore",
-    "dojo/date/locale",
-    "dojo/currency",
     "dijit/form/DateTextBox",
     "dijit/form/TextBox",
-    "dijit/form/HorizontalSlider",
     'dojo/data/ItemFileWriteStore',
-    'dojox/uuid/generateRandomUuid',
     'dijit/form/Select',
     "dijit/form/TextBox",
     "dijit/registry",
@@ -38,34 +26,22 @@ function(
     on,
     declare,
     lang,
-    array,
     domClass,
     json,
     request,
-    esriRequest,
-    Graphic,
     Deferred,
     BaseWidget,
     LayerInfos,
-    LayerStructure,
     TabContainer,
-    jimuUtils,
-    Query,
-    QueryTask,
-    Geoprocessor,
     Tooltip,
     DataGrid,
     cells,
     cellsDijit,
     Memory,
     ObjectStore,
-    locale,
-    currency,
     DateTextBox,
     TextBox,
-    HorizontalSlider,
     ItemFileWriteStore,
-    generateRandomUuid,
     Select,
     TextBox,
     registry
@@ -113,21 +89,39 @@ function(
           }
         ]],
 
-    postCreate: function() {
+    postCreate() {
         this.inherited(arguments);
-
         this._setLayers();
 
-        this.own(on(this.updateBtn, "click", lang.hitch(this, this._onCurationUpdate)));
-        this.own(on(this.deleteBtnUpdateTable, "click", lang.hitch(this, this._onCurationDeleteInUpdateTable)));
-        this.own(on(this.clearBtnUpdateTable, "click", lang.hitch(this, this._clearItemsInUpdateTable)));
+        // Update Addresses Table.
+        this.own(on(this.updateBtn, "click", lang.hitch(this, function(){
+          this._updateAddressesInSpanner(this.updateTableGrid.selection.getSelected(), this.GridName.UPDATE);
+        })));
+        this.own(on(this.deleteBtnUpdateTable, "click", lang.hitch(this, function(){
+          this._deleteAddressesInSpanner(this.updateTableGrid.selection.getSelected(), this.GridName.UPDATE);
+        })));
+        this.own(on(this.clearBtnUpdateTable, "click", lang.hitch(this, function(){
+          this._clearItems(this.GridName.UPDATE);
+        })));
 
-        this.own(on(this.createBtn, "click", lang.hitch(this, this._onCurationCreate)));
-        this.own(on(this.deleteBtnCreateTable, "click", lang.hitch(this, this._onCurationDeleteInCreateTable)));
-        this.own(on(this.clearBtnCreateTable, "click", lang.hitch(this, this._clearItemsInCreateTable)));
+        // Create Addresses Table.
+        this.own(on(this.createBtn, "click", lang.hitch(this, function(){
+          this._createAddressesInSpanner(this.updateTableGrid.selection.getSelected(), this.GridName.CREATE);
+        })));
+        this.own(on(this.deleteBtnCreateTable, "click", lang.hitch(this, function(){
+          this._deleteAddressesInSpanner(this.updateTableGrid.selection.getSelected(), this.GridName.CREATE);
+        })));
+        this.own(on(this.clearBtnCreateTable, "click", lang.hitch(this, function(){
+          this._clearItems(this.GridName.CREATE);
+        })));
 
-        this.own(on(this.addAddressBtnUpdate, "click", lang.hitch(this, this._addAddressToUpdateTableStore)));
-        this.own(on(this.addAddressBtnCreate, "click", lang.hitch(this, this._addAddressToCreateTableStore)));
+        // Create Single Address Entry.
+        this.own(on(this.addAddressBtnUpdate, "click", lang.hitch(this, function(){
+          this._addItem(this._fetchAddressItemInForm(), this.GridName.UPDATE);
+        })));
+        this.own(on(this.addAddressBtnCreate, "click", lang.hitch(this, function(){
+          this._addItem(this._fetchAddressItemInForm(), this.GridName.CREATE);
+        })));
 
         const TOOLTIP_CONTENT = "<div class='tooltipContent'>" +
             "<b>Curate</b> appends your selected uncurated addresses to the design address table.</div>";
@@ -147,14 +141,14 @@ function(
         });
     },
 
-    startup: function () {
+    startup() {
       this._initTabContainer();
       this._initGrid();
       this._initInputBox();
       this._initSelectBox();
     },
 
-    onOpen: function () {
+    onOpen() {
         const panel = this.getPanel();
         panel.position.width = 1300;
         panel.position.height = 415;
@@ -162,7 +156,7 @@ function(
         panel.panelManager.normalizePanel(panel);
     },
 
-    _initTabContainer: function () {
+    _initTabContainer() {
       let tabs = [];
       tabs.push({
         title: "Update Addresses",
@@ -205,33 +199,33 @@ function(
     _initInputBox() {
       const globalIdBox = new TextBox({
         id: "globalId",
-      }, this.globalIdContainer)
-      globalIdBox.startup()
+      }, this.globalIdContainer);
+      globalIdBox.startup();
 
       const cityBox = new TextBox({
         id: "city",
-      }, this.cityContainer)
-      cityBox.startup()
+      }, this.cityContainer);
+      cityBox.startup();
 
       const stateBox = new TextBox({
         id: "state",
-      }, this.stateContainer)
-      stateBox.startup()
+      }, this.stateContainer);
+      stateBox.startup();
 
       const latitudeBox = new TextBox({
         id: "latitude",
-      }, this.latitudeContainer)
-      latitudeBox.startup()
+      }, this.latitudeContainer);
+      latitudeBox.startup();
 
       const longitudeBox = new TextBox({
         id: "longitude",
-      }, this.longitudeContainer)
-      longitudeBox.startup()
+      }, this.longitudeContainer);
+      longitudeBox.startup();
 
       const zipCodeBox = new TextBox({
         id: "zipCode",
-      }, this.zipCodeContainer)
-      zipCodeBox.startup()
+      }, this.zipCodeContainer);
+      zipCodeBox.startup();
     },
 
     _initSelectBox() {
@@ -242,8 +236,8 @@ function(
             { label: "SFU", value: "Single Family Unit", selected: true},
             { label: "MDU", value: "Mutiple Dex Unit" },
         ]
-      }, this.addressTypeContainer)
-      selectBox1.startup()
+      }, this.addressTypeContainer);
+      selectBox1.startup();
 
       const selectBox2 = new Select({
           name: "physicalAddressStatus",
@@ -252,31 +246,15 @@ function(
               { label: "Curated", value: "Curated", selected: true},
               { label: "Uncrated", value: "Uncurated" },
           ]
-      }, this.physicalAddressStatusContainer)
-      selectBox2.startup()
+      }, this.physicalAddressStatusContainer);
+      selectBox2.startup();
     },
 
-    _selectionChange(){
+    _selectionChange() {
       this.selectedCountInUpdateTable.innerHTML = this.updateTableGrid.selection.getSelected().length;
     },
 
-    _onCurationUpdate: function(){
-        this._updateAddressesInSpanner(this._deleteSelectedItemsInTable(this.GridName.UPDATE))
-    },
-
-    _onCurationCreate: function(){
-        this._createAddressesInSpanner(this._deleteSelectedItemsInTable(this.GridName.CREATE))
-    },
-
-    _onCurationDeleteInUpdateTable: function(){
-        this._deleteAddressesInSpanner(this._deleteSelectedItemsInTable(this.GridName.UPDATE));
-    },
-
-    _onCurationDeleteInCreateTable: function(){
-        this._deleteAddressesInSpanner(this._deleteSelectedItemsInTable(this.GridName.CREATE));
-    },
-
-    _fetchAddressItemInForm: function() {
+    _fetchAddressItemInForm() {
       const globalIdValue = registry.byId("globalId").get("value");
       const cityValue = registry.byId("city").get("value");
       const stateValue = registry.byId("state").get("value");
@@ -300,17 +278,8 @@ function(
       return item
     },
 
-    _addAddressToUpdateTableStore: function() {
-      this._addItem(this._fetchAddressItemInForm(), this.GridName.UPDATE);
-    },
-
-    _addAddressToCreateTableStore: function() {
-      this._addItem(this._fetchAddressItemInForm(), this.GridName.UPDATE);
-    },
-
-    _deleteSelectedItemsInTable: function(gridName) {
+    _deleteSelectedItemsInTable(items, gridName) {
       if(gridName === this.GridName.UPDATE) {
-        const items = this.updateTableGrid.selection.getSelected();
         const updateTableDeletionCount = items.length
         console.log(`Delete ${updateTableDeletionCount} item(s) from store.`)
         if(updateTableDeletionCount){
@@ -320,33 +289,32 @@ function(
               this.updateTableStore.deleteItem(item);
             }
           }
-          this.updateTableStore.save()
+          this.updateTableStore.save();
         }
         this.recordCountInUpdateTable.innerHTML -= updateTableDeletionCount;
         if(this.recordCountInUpdateTable.innerHTML === "0") {
           this._disableBtns(this.GridName.UPDATE);
         }
         return items;
-      } else if (gridName === this.GridName.CREATE) {
+      } else {
         // TODO(XXX): Implement it.
       }
-      return {};
     },
 
-    _clearItemsInUpdateTable: function() {
-      const updateTableAllCount = this.updateTableGrid.rowCount;
-      console.log(`Clear all ${updateTableAllCount} item(s) from store.`)
-      this.updateTableStore = new ItemFileWriteStore({data: {identifier: "GLOBALID", items: []}}),
-      this.updateTableGrid.setStore(this.updateTableStore);
-      this.recordCountInUpdateTable.innerHTML = 0;
-      this._disableBtns(this.GridName.UPDATE)
+    _clearItems(gridName) {
+      if(gridName === this.GridName.UPDATE) {
+        const updateTableAllCount = this.updateTableGrid.rowCount;
+        console.log(`Clear all ${updateTableAllCount} item(s) from store.`);
+        this.updateTableStore = new ItemFileWriteStore({data: {identifier: "GLOBALID", items: []}}),
+        this.updateTableGrid.setStore(this.updateTableStore);
+        this.recordCountInUpdateTable.innerHTML = 0;
+        this._disableBtns(this.GridName.UPDATE)
+      } else {
+        // TODO(XXX): Implement it.
+      }
     },
 
-    _clearItemsInCreateTable: function() {
-      // TODO(XXX): Implement it.
-    },
-
-    _disableBtns: function(gridName) {
+    _disableBtns(gridName) {
       if(gridName === this.GridName.UPDATE){
         domClass.add(this.updateBtn, 'disabled');
         domClass.add(this.deleteBtnUpdateTable, 'disabled');
@@ -358,7 +326,7 @@ function(
       }
     },
 
-    _addItem: function(item, gridName){
+    _addItem(item, gridName) {
       if(gridName === this.GridName.UPDATE) {
         this.updateTableStore.fetch({query: { GLOBALID: item.GLOBALID}, onComplete: lang.hitch(this, function(data){
           if(data.length === 0){
@@ -371,79 +339,80 @@ function(
     },
 
     _createAddressesInSpanner: function(items){
-        console.log("Create items:" + items)
-        console.log("Send CREATE request to one platform api.")
-        const getURL = "https://dog.ceo/api/breeds/image/random"
-        const postURL = "https://httpbin.org/post"
-        const postData = {items: items}
+      console.log("Create items in spanner:" + items);
+      const getURL = "https://dog.ceo/api/breeds/image/random";
+      const postURL = "https://httpbin.org/post";
+      const postData = {items};
+      request.get(getURL, {
+          headers: {
+            "X-Requested-With": null
+          }
+      }).then(lang.hitch(this, function(response) {
+          console.log(`Test GET rest api: ${getURL}, Response: `, response);
+      }));
+      request.post(postURL, {
+          data: postData,
+          headers: {
+            "X-Requested-With": null
+          }
+      }).then(lang.hitch(this, function(response) {
+        this._deleteSelectedItemsInTable(items, gridName);
+        console.log(`Test POST rest api: ${postURL}, for POST data: ${json.stringify(postData)}, Response: `, response);
+      }));
+    },
+
+    _updateAddressesInSpanner: function(items, gridName){
+        console.log("Update items in spanner:" + items);
+        const getURL = "https://dog.ceo/api/breeds/image/random";
+        const postURL = "https://httpbin.org/post";
+        const postData = {items};
         request.get(getURL, {
             headers: {
               "X-Requested-With": null
             }
-        }).then(function(response){
+        }).then(lang.hitch(this, function(response) {
             console.log(`Test GET rest api: ${getURL}, Response: `, response);
-        });
+        }));
         request.post(postURL, {
             data: postData,
             headers: {
               "X-Requested-With": null
             }
-        }).then(function(response){
-            console.log(`Test POST rest api: ${postURL}, for POST data: ${json.stringify(postData)}, Response: `, response);
-        });
+        }).then(lang.hitch(this, function(response) {
+          this._deleteSelectedItemsInTable(items, gridName);
+          console.log(`Test POST rest api: ${postURL}, for POST data: ${json.stringify(postData)}, Response: `, response);
+        }));
     },
 
-    _updateAddressesInSpanner: function(items){
-        console.log("Update items:" + items)
-        console.log("Send UPDATE request to one platform api.")
-        const getURL = "https://dog.ceo/api/breeds/image/random"
-        const postURL = "https://httpbin.org/post"
-        const postData = {items: items}
-        request.get(getURL, {
-            headers: {
-              "X-Requested-With": null
-            }
-        }).then(function(response){
-            console.log(`Test GET rest api: ${getURL}, Response: `, response);
-        });
-        request.post(postURL, {
-            data: postData,
-            headers: {
-              "X-Requested-With": null
-            }
-        }).then(function(response){
-            console.log(`Test POST rest api: ${postURL}, for POST data: ${json.stringify(postData)}, Response: `, response);
-        });
+    _deleteAddressesInSpanner(items, gridName) {
+      console.log("Delete items in spanner:" + items);
+      const getURL = "https://dog.ceo/api/breeds/image/random";
+      const postURL = "https://httpbin.org/post";
+      const postData = {items};
+      request.get(getURL, {
+          headers: {
+            "X-Requested-With": null
+          }
+      }).then(lang.hitch(this, function(response) {
+          console.log(`Test GET rest api: ${getURL}, Response: `, response);
+      }));
+      request.post(postURL, {
+          data: postData,
+          headers: {
+            "X-Requested-With": null
+          }
+      }).then(lang.hitch(this, function(response) {
+        this._deleteSelectedItemsInTable(items, gridName);
+        console.log(`Test POST rest api: ${postURL}, for POST data: ${json.stringify(postData)}, Response: `, response);
+      }));
     },
 
-    _deleteAddressesInSpanner: function(items){
-        console.log("Send DELETE request to one platform api.")
-        const getURL = "https://dog.ceo/api/breeds/image/random"
-        const postURL = "https://httpbin.org/post"
-        const postData = {items: items}
-        request.get(getURL, {
-            headers: {
-              "X-Requested-With": null
-            }
-        }).then(function(response){
-            console.log(`Test GET rest api: ${getURL}, Response: `, response);
-        });
-        request.post(postURL, {
-            data: postData,
-            headers: {
-              "X-Requested-With": null
-            }
-        }).then(function(response){
-            console.log(`Test POST rest api: ${postURL}, for POST data: ${json.stringify(postData)}, Response: `, response);
-        });
-    },
-
-    _setLayers: function(){
+    _setLayers() {
         let deferred = new Deferred();
         if(this.map && this.map.itemInfo){
             LayerInfos.getInstance(this.map, this.map.itemInfo).then(lang.hitch(this, function(layerInfosObject){
                 let layers = layerInfosObject.getLayerInfoArray();
-                console.log(layers)
+                console.log(layers);
                 if(this.config.hasOwnProperty("uncuratedLayerIndex")){
                     this.uncuratedLayer = layers[this.config.uncuratedLayerIndex].layerObject;
                     this.uncuratedLayer.on("selection-complete", lang.hitch(this, this._updateSelection));
@@ -455,13 +424,13 @@ function(
                 }
             }));
         } else {
-            console.log("Cannot access map itemInfo.")
+            console.log("Cannot access map itemInfo.");
             deferred.reject();
         }
         return deferred.promise;
     },
 
-    _updateSelection: function(){
+    _updateSelection() {
         const selected = this.uncuratedLayer.getSelectedFeatures();
         if(this.recordCountInUpdateTable){
             this.recordCountInUpdateTable.innerHTML = this.updateTableStore._arrayOfAllItems.length;
