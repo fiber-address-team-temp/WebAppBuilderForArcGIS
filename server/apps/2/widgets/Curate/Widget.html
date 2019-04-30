@@ -10,7 +10,7 @@
 
         <div id="curateTooltip" data-dojo-attach-point="curateTooltipUpdate">(See the detail of curation option)</div>
 
-        <div id="gridDiv" data-dojo-attach-point="gridDivUpdateTable"></div>
+        <div id="gridDivUpdateTable" data-dojo-attach-point="gridDivUpdateTable"></div>
 
         <button id="curateBtn" data-dojo-attach-point="updateBtn" class="btn btn-primary disabled">Curate Update</button>
         <button id="curateBtn" data-dojo-attach-point="deleteBtnUpdateTable" class="btn btn-primary disabled">Curate Delete</button>
@@ -19,19 +19,19 @@
     </div>
     <div class="curation-tab-node2" data-dojo-attach-point="tabNode2"><br>
       <div>
-        <div> Total uncurated addresses in the table is  <div id="recordCount" data-dojo-attach-point="recordCount">0</div>.
+        <div> Total uncurated addresses in the table is  <div id="recordCount" data-dojo-attach-point="recordCountInCreateTable">0</div>.
         </div>
-        <div> You have selected <div id="selectedCount" data-dojo-attach-point="selectedCount">0</div>
+        <div> You have selected <div id="selectedCount" data-dojo-attach-point="selectedCountInCreateTable">0</div>
            uncurated address records to curate. Click on the below buttons to start the curation process.
         </div>
 
         <div id="curateTooltip" data-dojo-attach-point="curateTooltipCreate">(See the detail of curation option)</div>
 
-        <!-- <div id="gridDiv" data-dojo-attach-point="gridDiv"></div> -->
+        <div id="gridDivCreateTable" data-dojo-attach-point="gridDivCreateTable"></div>
 
         <button id="curateBtn" data-dojo-attach-point="createBtn" class="btn btn-primary disabled">Curate Create</button>
         <button id="curateBtn" data-dojo-attach-point="deleteBtnCreateTable" class="btn btn-primary disabled">Curate Delete</button>
-        <button id="curateBtn" data-dojo-attach-point="clearBtnCreateTable" class="btn btn-primary">Clear Table</button><br>
+        <button id="curateBtn" data-dojo-attach-point="clearBtnCreateTable" class="btn btn-primary disabled">Clear Table</button><br>
       </div>
     </div>
     <div class="curation-tab-node3" data-dojo-attach-point="tabNode3"><br>
